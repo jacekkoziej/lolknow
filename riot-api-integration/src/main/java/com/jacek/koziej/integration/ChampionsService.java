@@ -1,15 +1,13 @@
 package com.jacek.koziej.integration;
 
-import com.google.gson.Gson;
-import org.apache.http.HttpEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
+import com.jacek.koziej.integration.feign.services.ChampionsClient;
+import com.jacek.koziej.integration.model.Champion;
+import feign.Feign;
+import feign.gson.GsonDecoder;
+import feign.gson.GsonEncoder;
+import feign.httpclient.ApacheHttpClient;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,22 +15,34 @@ import java.util.List;
 public class ChampionsService {
 
 
-    public List<Champion> getAll() throws IOException {
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+//    public List<Champion> getAll() throws IOException {
+//        CloseableHttpClient httpClient = HttpClients.createDefault();
+//
+//        HttpGet request = new HttpGet("http://ddragon.leagueoflegends.com/cdn/11.4.1/data/en_US/champion.json");
+//        CloseableHttpResponse response = httpClient.execute(request);
+//        System.out.println(response.getStatusLine().getStatusCode());
+//        HttpEntity entity = response.getEntity();
+//        if (entity != null) {
+//            String result = EntityUtils.toString(entity);
+//            System.out.println(result);
+//            Champions champions = new Gson().fromJson(result, Champions.class);
+//
+//
+//            return new ArrayList<>(champions.getData().values());
+//
+//        }
+//        return new ArrayList<>();
+//    }
 
-        HttpGet request = new HttpGet("http://ddragon.leagueoflegends.com/cdn/11.4.1/data/en_US/champion.json");
-        CloseableHttpResponse response = httpClient.execute(request);
-        System.out.println(response.getStatusLine().getStatusCode());
-        HttpEntity entity = response.getEntity();
-        if (entity != null) {
-            String result = EntityUtils.toString(entity);
-            System.out.println(result);
-            Champions champions = new Gson().fromJson(result, Champions.class);
+    public List<Champion> getAll(){
 
+        ChampionsClient championsClient = Feign.builder()
+                .client(new ApacheHttpClient())
+                .encoder(new GsonEncoder())
+                .decoder(new GsonDecoder())
+                .target(ChampionsClient.class, "http://ddragon.leagueoflegends.com/cdn/11.4.1/data/en_US/champion.json");
 
-            return new ArrayList<>(champions.getData().values());
-
-        }
-        return new ArrayList<>();
+        return new ArrayList<>(championsClient.getAll().getData().values());
     }
+
 }

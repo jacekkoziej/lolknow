@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lolknowapplication" />
+        <module name="lolknow-application" />
+        <module name="riot-api-integration" />
       </profile>
     </annotationProcessing>
   </component>

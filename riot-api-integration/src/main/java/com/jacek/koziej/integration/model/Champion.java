@@ -1,4 +1,4 @@
-package com.jacek.koziej.integration;
+package com.jacek.koziej.integration.model;
 
 public class Champion {
 
