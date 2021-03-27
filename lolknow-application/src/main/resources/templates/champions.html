@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <h1>
+        Klikalny obrazek
+       <a href = /v1/champions/single>
+      <img th:src="@{/img/test.png}"  style="width:304px;height:228px"/>
+       </a>
+    </h1>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ico</th>
+        <th> Bohater </th>
+        <th> Opis </th>
+        <th> image name </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${champions.empty}">
+        <td colspan="2"> No Champions Available </td>
+    </tr>
+    <tr th:each="champion : ${champions}">
+        <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>
+        <td><span th:text="${champion.name}"> Bohater </span></td>
+        <td><span th:text="${champion.title}"> Tytuł </span></td>
+        <td><span th:text="${champion.image.full}"> Tytuł </span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

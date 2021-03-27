@@ -6,6 +6,7 @@ public class Champion {
     private String key;
     private String name;
     private String title;
+    private Image image;
 
     public String getKey() {
         return key;
@@ -38,4 +39,8 @@ public class Champion {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public Image getImage() { return image; }
+
+    public void setImage(Image image) { this.image = image; }
 }

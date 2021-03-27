@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lolknow-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lolknow-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lolknow-application/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/riot-api-integration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/riot-api-integration/src/main/java" charset="UTF-8" />
   </component>
 </project>
