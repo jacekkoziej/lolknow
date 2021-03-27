@@ -7,6 +7,7 @@ public class Champion {
     private String name;
     private String title;
     private Image image;
+    private ChampionStats stats;
 
     public String getKey() {
         return key;
@@ -43,4 +44,12 @@ public class Champion {
     public Image getImage() { return image; }
 
     public void setImage(Image image) { this.image = image; }
+
+    public ChampionStats getStats() {
+        return stats;
+    }
+
+    public void setStats(ChampionStats stats) {
+        this.stats = stats;
+    }
 }

@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <p>Champion info:</p>
-<span th:text="${name}"/>
+<table>
+<!--        <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>-->
+<!--        <td><span th:text="${championstats.hp}"> Bohater </span></td>-->
+<!--        <td><span th:text="${champion.title}"> Tytuł </span></td>-->
+<!--        <td><span th:text="${champion.image.full}"> Tytuł </span></td>-->
+
+   <tr>
+       <td>Image: </td>
+       <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>
+   </tr>
+    <tr>
+       <td>Name: </td>
+       <td><span th:text="${champion.name}"> Bohater </span></td>
+   </tr>
+    <tr>
+       <td>Hp: </td>
+       <td><span th:text="${champion.stats.hp}"> Bohater </span></td>
+   </tr>
+    <tr>
+       <td>Hp per level: </td>
+       <td><span th:text="${champion.stats.hpperlevel}"> Bohater </span></td>
+   </tr>
+    <tr>
+       <td>Mp: </td>
+       <td><span th:text="${champion.stats.mp}"> Bohater </span></td>
+   </tr>
+    <tr>
+       <td>Armor: </td>
+       <td><span th:text="${champion.stats.armor}"> Bohater </span></td>
+   </tr>
+</table>
 </body>
 </html>

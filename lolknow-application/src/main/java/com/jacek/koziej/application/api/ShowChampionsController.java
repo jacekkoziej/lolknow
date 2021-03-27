@@ -10,15 +10,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Controller
 @RequestMapping("/v1/champions")
 public class ShowChampionsController {
 
+    private List<Champion> all;
+
     @GetMapping("/all")
     public String allChampions(Model model) {
-        model.addAttribute("champions", new ChampionsService().getAll());
+        if (all == null)  all = new ChampionsService().getAll();
+        model.addAttribute("champions", all);
         return "champions";
 
 //        StringBuilder stringBuilder = new StringBuilder();
@@ -33,8 +37,9 @@ public class ShowChampionsController {
 
     @GetMapping("/single")
     public String single(Model model, @RequestParam("id") String id) {
-//        model.addAttribute("champions", new ChampionsService().getAll());
-        model.addAttribute("name", id);
+        if (all == null)  all = new ChampionsService().getAll();
+        Optional<Champion> first = all.stream().filter(champion -> champion.getName().equals(id)).findFirst();
+        model.addAttribute("champion", first.get());
         return "champion";
     }
 
