@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/js.cssandjs/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/js.cssandjs/nicepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/logo/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/Blog-Template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +256,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -279,17 +270,17 @@
       <recent name="com.jacek.koziej.application.api.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\templates" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\css" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\jquery" />
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\img\champion" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\js.cssandjs" />
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -381,7 +372,7 @@
       <workItem from="1615990658595" duration="3805000" />
       <workItem from="1616013479128" duration="216000" />
       <workItem from="1616843408663" duration="3478000" />
-      <workItem from="1616860979952" duration="31112000" />
+      <workItem from="1616860979952" duration="35631000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -411,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616879113996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added home and champions html">
+      <created>1616964945344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616964945344</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -476,7 +474,8 @@
     <MESSAGE value="lolknow application and riot api connection using feign client" />
     <MESSAGE value="Adding assets and dislay champinons ico" />
     <MESSAGE value="Champions details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Champions details" />
+    <MESSAGE value="added home and champions html" />
+    <option name="LAST_COMMIT_MESSAGE" value="added home and champions html" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/model/ShowChampionsController.java" />

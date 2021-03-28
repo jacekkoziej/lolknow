@@ -1,41 +1,260 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html style="font-size: 16px;" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>Champion info:</p>
-<table>
-<!--        <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>-->
-<!--        <td><span th:text="${championstats.hp}"> Bohater </span></td>-->
-<!--        <td><span th:text="${champion.title}"> Tytuł </span></td>-->
-<!--        <td><span th:text="${champion.image.full}"> Tytuł </span></td>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE, Secrets">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Szukaj</title>
+    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/nicepage.css" media="screen">-->
+    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/home.css" media="screen">-->
+    <link rel="stylesheet" th:href="@{/styles/cssandjs/nicepage.css}" media="screen">
+    <link rel="stylesheet" th:href="@{/styles/cssandjs/champion.css}" media="screen">
+    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/jquery.js}" defer=""></script>
+    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/nicepage.js}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.10.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
-   <tr>
-       <td>Image: </td>
-       <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>
-   </tr>
-    <tr>
-       <td>Name: </td>
-       <td><span th:text="${champion.name}"> Bohater </span></td>
-   </tr>
-    <tr>
-       <td>Hp: </td>
-       <td><span th:text="${champion.stats.hp}"> Bohater </span></td>
-   </tr>
-    <tr>
-       <td>Hp per level: </td>
-       <td><span th:text="${champion.stats.hpperlevel}"> Bohater </span></td>
-   </tr>
-    <tr>
-       <td>Mp: </td>
-       <td><span th:text="${champion.stats.mp}"> Bohater </span></td>
-   </tr>
-    <tr>
-       <td>Armor: </td>
-       <td><span th:text="${champion.stats.armor}"> Bohater </span></td>
-   </tr>
-</table>
+
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "",
+        "url": "home.html",
+        "logo": "images/default-logo.png"
+    }</script>
+    <meta property="og:title" content="Szukaj">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+</head>
+<body class="u-body">
+<header class="u-clearfix u-header u-header" id="sec-d054">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1">
+            <img th:src="@{/logo/img.png}"/>
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                   href="#">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </symbol>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            style="padding: 10px 20px;">Ranking</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            style="padding: 10px 20px;"
+                            href="/v1/champions/all">Bohaterowie</a>
+
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="Kontakt.html">Kontakt</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="O-aplikacji.html" style="padding: 10px 20px;">O aplikacji</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html"
+                                                      style="padding: 10px 20px;">Szukaj</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">Ranking</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">Bohaterowie</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Kontakt.html"
+                                                      style="padding: 10px 20px;">Kontakt</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="O-aplikacji.html"
+                                                      style="padding: 10px 20px;">O aplikacji</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+    </div>
+</header>
 </body>
+<section class="u-align-center u-clearfix u-section-1" id="carousel_ae03">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
+            <ul class="u-border-1 u-border-grey-25 u-tab-list u-unstyled" role="tablist">
+                <li class="u-tab-item" role="presentation">
+                    <a class="active u-active-palette-1-base u-button-style u-tab-link u-text-active-white u-text-grey-40 u-text-hover-black u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Statystyki</a>
+                </li>
+                <li class="u-tab-item" role="presentation">
+                    <a class="u-active-palette-1-base u-button-style u-tab-link u-text-active-white u-text-grey-40 u-text-hover-black u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Opis umiejętności</a>
+                </li>
+            </ul>
+            <div class="u-tab-content">
+                <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+                    <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
+                        <img class="u-image u-image-1" th:src="@{/img/loading/{image}(image=${champion.image.full})}" data-image-width="366" data-image-height="619">
+                        <h4 class="u-text u-text-1">nazwa bohatera</h4>
+                        <p class="u-text u-text-grey-40 u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.&nbsp;Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                        <ul class="u-custom-list u-text u-text-3">
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>excepteur sint occaecat cupidatat non
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>sunt in culpa qui officia deserunt
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>ut enim ad minim veniam
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>quis nostrud exercitation ullamco
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>laboris nisi ut aliquip ex ea commodo
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>duis aute irure dolor in reprehenderit in
+                            </li>
+                            <li>
+                                <div class="class u-list-icon u-text-palette-1-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-72c3"><path d="m433.1 67.1-231.8 231.9c-6.2 6.2-16.4 6.2-22.6 0l-99.8-99.8-78.9 78.8 150.5 150.5c10.5 10.5 24.6 16.3 39.4 16.3 14.8 0 29-5.9 39.4-16.3l282.7-282.5z" fill="currentColor"></path></svg>
+                                </div>voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+                    <div class="u-container-layout u-container-layout-2">
+                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-2" data-image-width="366" data-image-height="619">
+                        <div class="fr-view u-clearfix u-rich-text u-text u-text-4">
+                            <h5 style="text-align: left;">
+                                <span style="line-height: 2; font-size: 1.5rem;">Sample Headline</span>
+                            </h5>
+                            <p style="text-align: left;">
+                                <span style="line-height: 2.0;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
+                            </p>
+                        </div>
+                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-3" data-image-width="366" data-image-height="619">
+                        <div class="fr-view u-clearfix u-rich-text u-text u-text-5">
+                            <h5 style="text-align: left;">
+                                <span style="line-height: 2; font-size: 1.5rem;">Sample Headline</span>
+                            </h5>
+                            <p style="text-align: left;">
+                                <span style="line-height: 2.0;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
+                            </p>
+                        </div>
+                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-4" data-image-width="366" data-image-height="619">
+                        <div class="fr-view u-clearfix u-rich-text u-text u-text-6">
+                            <h5 style="text-align: left;">
+                                <span style="line-height: 2; font-size: 1.5rem;">Sample Headline</span>
+                            </h5>
+                            <p style="text-align: left;">
+                                <span style="line-height: 2.0;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
+                            </p>
+                        </div>
+                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-5" data-image-width="366" data-image-height="619">
+                        <div class="fr-view u-clearfix u-rich-text u-text u-text-7">
+                            <h5 style="text-align: left;">
+                                <span style="line-height: 2; font-size: 1.5rem;">Sample Headline</span>
+                            </h5>
+                            <p style="text-align: left;">
+                                <span style="line-height: 2.0;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
+                            </p>
+                        </div>
+                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-6" data-image-width="366" data-image-height="619">
+                        <div class="fr-view u-clearfix u-rich-text u-text u-text-8">
+                            <h5 style="text-align: left;">
+                                <span style="line-height: 2; font-size: 1.5rem;">Sample Headline</span>
+                            </h5>
+                            <p style="text-align: left;">
+                                <span style="line-height: 2.0;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-section-2" id="sec-0973">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+</section>
+<!--<body>-->
+<!--<table>-->
+<!--&lt;!&ndash;        <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span th:text="${championstats.hp}"> Bohater </span></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span th:text="${champion.title}"> Tytuł </span></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span th:text="${champion.image.full}"> Tytuł </span></td>&ndash;&gt;-->
+
+<!--   <tr>-->
+<!--       <td>Image: </td>-->
+<!--       <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>-->
+<!--   </tr>-->
+<!--    <tr>-->
+<!--       <td>Name: </td>-->
+<!--       <td><span th:text="${champion.name}"> Bohater </span></td>-->
+<!--   </tr>-->
+<!--    <tr>-->
+<!--       <td>Hp: </td>-->
+<!--       <td><span th:text="${champion.stats.hp}"> Bohater </span></td>-->
+<!--   </tr>-->
+<!--    <tr>-->
+<!--       <td>Hp per level: </td>-->
+<!--       <td><span th:text="${champion.stats.hpperlevel}"> Bohater </span></td>-->
+<!--   </tr>-->
+<!--    <tr>-->
+<!--       <td>Mp: </td>-->
+<!--       <td><span th:text="${champion.stats.mp}"> Bohater </span></td>-->
+<!--   </tr>-->
+<!--    <tr>-->
+<!--       <td>Armor: </td>-->
+<!--       <td><span th:text="${champion.stats.armor}"> Bohater </span></td>-->
+<!--   </tr>-->
+<!--</table>-->
+<!--</body>-->
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">LOLKNOW isn't endorsed by Riot Games and doesn't reflect
+            the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games
+            properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games,
+            Inc.</p>
+    </div>
+</footer>
 </html>
