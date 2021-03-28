@@ -118,9 +118,9 @@
             <div class="u-tab-content">
                 <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
                     <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                        <img class="u-image u-image-1" th:src="@{/img/loading/{image}(image=${champion.image.full})}" data-image-width="366" data-image-height="619">
-                        <h4 class="u-text u-text-1">nazwa bohatera</h4>
-                        <p class="u-text u-text-grey-40 u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.&nbsp;Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                        <img class="u-image u-image-1" th:src="@{/img/loading/{image}(image=${champion.image.full})}" data-image-width="308" data-image-height="560">
+                        <h4 class="u-text u-text-1" th:text="${champion.name}"> </h4>
+                        <p class="u-text u-text-grey-40 u-text-2" th:text="${champion.title}"></p>
                         <ul class="u-custom-list u-text u-text-3">
                             <li>
                                 <div class="class u-list-icon u-text-palette-1-base">
