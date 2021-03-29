@@ -40,7 +40,7 @@ public class ChampionsService {
                 .client(new ApacheHttpClient())
                 .encoder(new GsonEncoder())
                 .decoder(new GsonDecoder())
-                .target(ChampionsClient.class, "http://ddragon.leagueoflegends.com/cdn/11.4.1/data/en_US/champion.json");
+                .target(ChampionsClient.class, "http://ddragon.leagueoflegends.com/cdn/11.4.1/data/pl_PL/champion.json");
 
         return new ArrayList<>(championsClient.getAll().getData().values());
     }
