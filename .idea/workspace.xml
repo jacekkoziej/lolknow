@@ -5,166 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Aatrox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ahri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Akali.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Alistar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Amumu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Anivia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Annie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Aphelios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ashe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/AurelionSol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Azir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Bard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Blitzcrank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Brand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Braum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Caitlyn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Camille.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Cassiopeia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Chogath.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Corki.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Darius.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Diana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/DrMundo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Draven.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ekko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Elise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Evelynn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ezreal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/FiddleSticks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Fiora.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Fizz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Galio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Gangplank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Garen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Gnar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Gragas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Graves.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Hecarim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Heimerdinger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Illaoi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Irelia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ivern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Janna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/JarvanIV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Jax.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Jayce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Jhin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Jinx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kaisa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kalista.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Karma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Karthus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kassadin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Katarina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kayle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kayn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kennen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Khazix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kindred.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Kled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/KogMaw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Leblanc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/LeeSin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Leona.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Lillia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Lissandra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Lucian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Lulu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Lux.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Malphite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Malzahar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Maokai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/MasterYi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/MissFortune.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/MonkeyKing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Mordekaiser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Morgana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nami.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nasus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nautilus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Neeko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nidalee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nocturne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Nunu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Olaf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Orianna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ornn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Pantheon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Poppy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Pyke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Qiyana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Quinn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Rakan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Rammus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/RekSai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Rell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Renekton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Rengar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Riven.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Rumble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ryze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Samira.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sejuani.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Senna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Seraphine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sett.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Shaco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Shen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Shyvana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Singed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sivir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Skarner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sona.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Soraka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Swain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Sylas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Syndra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/TahmKench.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Taliyah.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Talon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Taric.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Teemo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Thresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Tristana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Trundle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Tryndamere.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/TwistedFate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Twitch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Udyr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Urgot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Varus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Vayne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Veigar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Velkoz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Vi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Viego.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Viktor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Vladimir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Volibear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Warwick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Xayah.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Xerath.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/XinZhao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Yasuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Yone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Yorick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Yuumi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Zac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Zed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Ziggs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Zilean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Zoe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading/Zyra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/ChampionData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image__1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image__2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Leveltip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Passive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Recommended.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Skin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Stats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champion.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champions.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champions.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,6 +292,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jacek.koziej.integration.model" />
       <recent name="com.jacek.koziej.application.api.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -440,6 +310,7 @@
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jacek.koziej.integration.feign.services" />
       <recent name="com.jacek.koziej.application.api" />
       <recent name="com.jacek.koziej.integration" />
     </key>
@@ -528,7 +399,7 @@
       <workItem from="1615990658595" duration="3805000" />
       <workItem from="1616013479128" duration="216000" />
       <workItem from="1616843408663" duration="3478000" />
-      <workItem from="1616860979952" duration="44320000" />
+      <workItem from="1616860979952" duration="58892000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -579,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616970782488</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="editing champion stats view">
+      <created>1617048863191</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617048863191</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -647,7 +525,22 @@
     <MESSAGE value="added home and champions html" />
     <MESSAGE value="added champion stats html" />
     <MESSAGE value="adjusting image size and champion stats displayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusting image size and champion stats displayed" />
+    <MESSAGE value="editing champion stats view" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing champion stats view" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/model/ShowChampionsController.java" />

@@ -1,9 +1,12 @@
+
 package com.jacek.koziej.integration.model;
+
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Image {
+
+public class Image__1 {
 
     @SerializedName("full")
     @Expose

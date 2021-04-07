@@ -1,19 +1,18 @@
 package com.jacek.koziej.integration.model;
 
-import java.util.Map;
 
-public class Champions {
-  private String type;
-  private String format;
-  private String version;
-  private Map<String, Champion> data;
+public class ChampionData {
+    private String type;
+    private String format;
+    private String version;
+    private Champion data;
 
-    public Map<String, Champion> getData() {
+    public Champion getData() {
         return data;
     }
 
 
-    public void setData(Map<String, Champion> data) {
+    public void setData(Champion data) {
         this.data = data;
     }
 

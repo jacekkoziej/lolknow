@@ -1,7 +1,12 @@
 package com.jacek.koziej.application.api;
 
+import com.jacek.koziej.integration.ChampionService;
 import com.jacek.koziej.integration.ChampionsService;
+import com.jacek.koziej.integration.RankingService;
 import com.jacek.koziej.integration.model.Champion;
+import com.jacek.koziej.integration.model.ChampionData;
+import com.jacek.koziej.integration.model.Player;
+import com.jacek.koziej.integration.model.Spell;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,8 +14,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 
 @Controller
@@ -18,21 +26,13 @@ import java.util.Optional;
 public class ShowChampionsController {
 
     private List<Champion> allChampions;
+    private Spell passive;
 
     @GetMapping("/all")
     public String allChampions(Model model) {
         if (allChampions == null)  allChampions = new ChampionsService().getAll();
         model.addAttribute("champions", allChampions);
         return "champions";
-
-//        StringBuilder stringBuilder = new StringBuilder();
-//
-//        List<Champion> all = new ChampionsService().getAll();
-//
-//        all.forEach(champion -> champion.getImage();
-//
-//        return stringBuilder.toString();
-
     }
 
     @GetMapping("/single")
@@ -42,10 +42,14 @@ public class ShowChampionsController {
         model.addAttribute("champion", first.get());
         return "champion";
     }
+    @GetMapping("/test")
+    public String test(){
+        StringBuilder stringBuilder = new StringBuilder();
+        Champion champion = new ChampionService().getAll();
 
-    @GetMapping("/*")
-    public String defaultOver9000() {
-        return "over 9000";
+        stringBuilder.append(champion.getPassive().getName());
+
+
+        return stringBuilder.toString();
     }
-
 }
