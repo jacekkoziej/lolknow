@@ -4,6 +4,8 @@ import com.jacek.koziej.integration.ChampionsService;
 import com.jacek.koziej.integration.RankingService;
 import com.jacek.koziej.integration.model.Champion;
 import com.jacek.koziej.integration.model.Player;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,17 +16,23 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-@RestController
+@Controller
 @RequestMapping("/v1/ranking")
 public class ShowRankingController {
 
+    private final RankingService rankingService;
+
     private List<Player> bestPlayers;
+
+    public ShowRankingController(RankingService rankingService) {
+        this.rankingService = rankingService;
+    }
 
     @GetMapping("/challenger")
     public String showRanking2(){
         StringBuilder stringBuilder = new StringBuilder();
         //creating list and sorting by ranking using stream
-        List<Player> sortedPlayers = new RankingService().getAll().stream()
+        List<Player> sortedPlayers = rankingService.getAll().stream()
                 .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
                 .collect(Collectors.toList());
         //variable used to print position of a player in a ladder
@@ -47,7 +55,11 @@ public class ShowRankingController {
     }
     @GetMapping("/all")
     public String bestPlayers(Model model) {
-        if (bestPlayers == null)  bestPlayers = new RankingService().getAll();
+        if (bestPlayers == null)  bestPlayers = rankingService
+                .getAll()
+                .stream()
+                .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
+                .collect(Collectors.toList());
         model.addAttribute("ranking", bestPlayers);
         return "ranking";
     }
@@ -59,7 +71,7 @@ public class ShowRankingController {
 
     @GetMapping("/test")
     public List<Player> showRanking3(){
-        List<Player> sortedPlayers = new RankingService().getAll().stream()
+        List<Player> sortedPlayers = rankingService.getAll().stream()
                 .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
                 .collect(Collectors.toList());
 

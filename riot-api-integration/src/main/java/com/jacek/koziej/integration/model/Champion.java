@@ -59,10 +59,6 @@ public class Champion {
     @Expose
     private List<Recommended> recommended = null;
 
-    public Champion(Champion championData) {
-
-    }
-
     public String getId() {
         return id;
     }

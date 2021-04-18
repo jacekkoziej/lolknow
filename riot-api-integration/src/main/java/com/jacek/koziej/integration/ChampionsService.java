@@ -14,14 +14,19 @@ import java.util.List;
 @Component
 public class ChampionsService {
 
+    private final ChampionsClient championsClient;
+
+    public ChampionsService(ChampionsClient championsClient) {
+        this.championsClient = championsClient;
+    }
+
     public List<Champion> getAll(){
 
-        ChampionsClient championsClient = Feign.builder()
-                .client(new ApacheHttpClient())
-                .encoder(new GsonEncoder())
-                .decoder(new GsonDecoder())
-                .target(ChampionsClient.class, "http://ddragon.leagueoflegends.com/cdn/11.4.1/data/pl_PL/champion.json");
-
         return new ArrayList<>(championsClient.getAll().getData().values());
+    }
+
+    public Champion get(String name){
+        String id = name.replace(" ", "");
+        return championsClient.get(id).getData().get(id);
     }
 }

@@ -3,9 +3,11 @@ package com.jacek.koziej.integration.feign.services;
 import com.jacek.koziej.integration.model.BestPlayers;
 import feign.Headers;
 import feign.RequestLine;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 
+@FeignClient(name = "ladderClient", url = "https://eun1.api.riotgames.com/lol/league/v4/")
 public interface LadderClient {
-    @Headers("X-Riot-Token : RGAPI-db5bd1a0-495b-4e50-9a06-78f13c5044a0" )
-    @RequestLine("GET")
-    BestPlayers getAll();
+    @GetMapping(value = "challengerleagues/by-queue/RANKED_SOLO_5x5", produces = "application/json")
+    BestPlayers getRankedSolo5x5();
 }

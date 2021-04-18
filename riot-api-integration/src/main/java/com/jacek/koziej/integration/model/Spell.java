@@ -27,7 +27,7 @@ public class Spell {
     private Integer maxrank;
     @SerializedName("cooldown")
     @Expose
-    private List<Integer> cooldown = null;
+    private List<Double> cooldown = null;
     @SerializedName("cooldownBurn")
     @Expose
     private String cooldownBurn;
@@ -113,11 +113,11 @@ public class Spell {
         this.maxrank = maxrank;
     }
 
-    public List<Integer> getCooldown() {
+    public List<Double> getCooldown() {
         return cooldown;
     }
 
-    public void setCooldown(List<Integer> cooldown) {
+    public void setCooldown(List<Double> cooldown) {
         this.cooldown = cooldown;
     }
 

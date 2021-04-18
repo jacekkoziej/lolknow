@@ -83,12 +83,24 @@
         <h2 class="u-text u-text-1">Challenger EUNE</h2>
         <p class="u-text u-text-2">Lista najlepszych graczy</p>
     </div>
-    <ul>
-        <li></li>
-    </ul>
-    <div th:each="player : ${ranking}" style=display:inline-block>
-        <p th:text="${player.summonerName}"></p>
-    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Summoner name</th>
+            <th>League points</th>
+            <th>Wins</th>
+            <th>Losses</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="player : ${ranking}">
+            <td th:text="${player.summonerName}"></td>
+            <td th:text="${player.leaguePoints}"></td>
+            <td th:text="${player.wins}"></td>
+            <td th:text="${player.losses}"></td>
+        </tr>
+        </tbody>
+    </table>
 </section>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
     <div class="u-clearfix u-sheet u-sheet-1">

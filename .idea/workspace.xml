@@ -5,22 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowAboutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/LadderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/LadderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/feign/services/ChampionsClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/feign/services/ChampionsClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/feign/services/LadderClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/feign/services/LadderClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +59,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -262,6 +278,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -344,10 +361,19 @@
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="lolknow-application" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jacek.koziej.application.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="RIOT_TOKEN" value="RGAPI-ceb196fb-cd24-4754-8ee4-a36555c4d6ed" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
@@ -387,7 +413,7 @@
       <workItem from="1615990658595" duration="3805000" />
       <workItem from="1616013479128" duration="216000" />
       <workItem from="1616843408663" duration="3478000" />
-      <workItem from="1616860979952" duration="69954000" />
+      <workItem from="1616860979952" duration="77165000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -452,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617828320821</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added htmls about, contact">
+      <created>1618737374611</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618737374611</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -522,7 +555,8 @@
     <MESSAGE value="adjusting image size and champion stats displayed" />
     <MESSAGE value="editing champion stats view" />
     <MESSAGE value="test commit to remove after" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit to remove after" />
+    <MESSAGE value="added htmls about, contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="added htmls about, contact" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,6 +569,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
