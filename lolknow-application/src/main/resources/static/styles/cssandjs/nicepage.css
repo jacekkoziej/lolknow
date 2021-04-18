@@ -32444,7 +32444,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer {
-  background-image: none
+  background-image: none;
+  
 }
 
 .u-footer .u-sheet-1 {
@@ -32477,3 +32478,28 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+.icon-and-name{
+  display:inline-block;
+}
+
+.skills{
+  display:inline-block;
+  position: sticky;
+  top: 3px;
+}
+.skill-img {
+  display:inline-block;
+}
+
+.skill-opis {
+  display:inline-block;
+}
+.name-and-description{
+}
+.img-big{
+  display:inline-block;
+}
+.skill{
+  display:inline-block;
+}

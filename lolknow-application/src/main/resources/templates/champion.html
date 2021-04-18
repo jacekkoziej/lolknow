@@ -59,7 +59,7 @@
                 <ul class="u-nav u-unstyled u-nav-1">
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/ranking/test"
+                            href="/v1/ranking/all"
                             style="padding: 10px 20px;">Ranking</a>
                     </li>
                     <li class="u-nav-item"><a
@@ -106,7 +106,7 @@
 </header>
 </body>
 <section class="u-align-center u-clearfix u-section-1" id="carousel_ae03">
-    <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-clearfix u-sheet">
         <div>
             <div class="u-tab-content">
                 <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5"
@@ -117,164 +117,140 @@
                         <h4 class="u-text u-text-1" th:text="${champion.name}"></h4>
                         <p class="u-text u-text-grey-40 u-text-2" th:text="${champion.title}"></p>
                         <!--                        <ul class="u-custom-list u-text u-text-3">-->
-                            <table style="width:50%; margin-left:330px; margin-top:40px">
-                                <tr>
-                                    <td>Punkty życia</td>
-                                    <td><strong><span th:text="${champion.stats.hp}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Punkty many</td>
-                                    <td><strong><span th:text="${champion.stats.mp}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Pancerz</td>
-                                    <td><strong><span th:text="${champion.stats.armor}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Prędkość ruchu</td>
-                                    <td><strong><span th:text="${champion.stats.movespeed}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Zasięg uderzenia</td>
-                                    <td><strong><span th:text="${champion.stats.attackrange}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Regeneracja punktów życia</td>
-                                    <td><strong><span th:text="${champion.stats.hpregen}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Szansa na obrażenia krytyczne</td>
-                                    <td><strong><span th:text="${champion.stats.crit}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Siła ataku</td>
-                                    <td><strong><span th:text="${champion.stats.attackdamage}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Prędkość ataku</td>
-                                    <td><strong><span th:text="${champion.stats.attackspeed}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Pancerz/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.armorperlevel}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Punkty życia/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.hpperlevel}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Mana/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.mpperlevel}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Szansa na obrażenia krytyczne/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.critperlevel}"></span></strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Siła ataku/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.attackdamageperlevel}"></span></strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Prędkość ataku/poziom</td>
-                                    <td><strong><span th:text="${champion.stats.attackspeedperlevel}"></span></strong>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--                        </ul>-->
-                    </div>
-                    <div>
-                        <div class="fr-view u-clearfix u-rich-text u-text u-text-4">
-                            <h5 style="text-align: left;">
-                                <span style="line-height: 1; font-size: 1rem;"></span>
-                            </h5>
-                            <p style="text-align: left;">
-                                <span style="line-height: 1;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
-                            </p>
-                        </div>
-                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-3" data-image-width="366"
-                             data-image-height="619">
-                        <div class="fr-view u-clearfix u-rich-text u-text u-text-5">
-                            <h5 style="text-align: left;">
-                                <span style="line-height: 1; font-size: 1rem;">Sample Headline</span>
-                            </h5>
-                            <p style="text-align: left;">
-                                <span style="line-height: 1;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
-                            </p>
-                        </div>
-                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-4" data-image-width="366"
-                             data-image-height="619">
-                        <div class="fr-view u-clearfix u-rich-text u-text u-text-6">
-                            <h5 style="text-align: left;">
-                                <span style="line-height: 1; font-size: 1rem;">Sample Headline</span>
-                            </h5>
-                            <p style="text-align: left;">
-                                <span style="line-height: 1;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
-                            </p>
-                        </div>
-                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-5" data-image-width="366"
-                             data-image-height="619">
-                        <div class="fr-view u-clearfix u-rich-text u-text u-text-7">
-                            <h5 style="text-align: left;">
-                                <span style="line-height: 1; font-size: 1rem;">Sample Headline</span>
-                            </h5>
-                            <p style="text-align: left;">
-                                <span style="line-height: 1;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
-                            </p>
-                        </div>
-                        <img src="images/2.png" alt="" class="u-image u-image-default u-image-6" data-image-width="366"
-                             data-image-height="619">
-                        <div class="fr-view u-clearfix u-rich-text u-text u-text-8">
-                            <h5 style="text-align: left;">
-                                <span style="line-height: 1; font-size: 1rem;">Sample Headline</span>
-                            </h5>
-                            <p style="text-align: left;">
-                                <span style="line-height: 1;">Sample text. Click to select the text box. Click again or double click to start editing the text. Dictum non consectetur a erat nam at. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tellus mauris a diam maecenas&nbsp;</span>
-                            </p>
-                        </div>
+                        <table style="width:50%; margin-left:330px; margin-top:40px">
+                            <tr>
+                                <td>Punkty życia</td>
+                                <td><strong><span th:text="${champion.stats.hp}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Punkty many</td>
+                                <td><strong><span th:text="${champion.stats.mp}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Pancerz</td>
+                                <td><strong><span th:text="${champion.stats.armor}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Prędkość ruchu</td>
+                                <td><strong><span th:text="${champion.stats.movespeed}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Zasięg uderzenia</td>
+                                <td><strong><span th:text="${champion.stats.attackrange}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Regeneracja punktów życia</td>
+                                <td><strong><span th:text="${champion.stats.hpregen}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Szansa na obrażenia krytyczne</td>
+                                <td><strong><span th:text="${champion.stats.crit}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Siła ataku</td>
+                                <td><strong><span th:text="${champion.stats.attackdamage}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Prędkość ataku</td>
+                                <td><strong><span th:text="${champion.stats.attackspeed}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Pancerz/poziom</td>
+                                <td><strong><span th:text="${champion.stats.armorperlevel}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Punkty życia/poziom</td>
+                                <td><strong><span th:text="${champion.stats.hpperlevel}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Mana/poziom</td>
+                                <td><strong><span th:text="${champion.stats.mpperlevel}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Szansa na obrażenia krytyczne/poziom</td>
+                                <td><strong><span th:text="${champion.stats.critperlevel}"></span></strong></td>
+                            </tr>
+                            <tr>
+                                <td>Siła ataku/poziom</td>
+                                <td><strong><span th:text="${champion.stats.attackdamageperlevel}"></span></strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prędkość ataku/poziom</td>
+                                <td><strong><span th:text="${champion.stats.attackspeedperlevel}"></span></strong>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--                        </ul>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section class="u-align-center u-clearfix u-section-1">
+    <div class="u-clearfix u-sheet">
+        <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id=""
+                 role="tabpanel" aria-labelledby="link-tab-0da5">
+                <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
 
+                    <div>
+                        <!--                        <img th:src="@{/img/passive/{image}(image=${champion.passive.image.full})}"-->
+                        <!--                             data-image-width="64" data-image-height="64" alt=""-->
+                        <!--                             class="u-image u-image-default u-image-3">-->
+                        <div class="skill-opis">
+                            <p>
+                                <span style="font-weight: 700;" th:text="${champion.passive.name}"></span>
+                                <br>
+                                <span th:text="${champion.passive.description}"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill" th:each="spell : ${champion.spells}">
+<!--                           <img th:src="@{/img/spell/{image}(image=${spell.image.full})}" data-image-width="64" data-image-height="64">-->
+                            <p>
+                                <span style="font-weight: 700;" th:text="${spell.name}"></span>
+                                <br>
+                                <span th:text="${spell.description}"></span>
+                            </p>
+                    </div>
+                    <hr>
+                    <div class="lore" >
+                        <!--                        <div class="skill-img">-->
+                        <!--                            <img th:src="@{/img/spell/{image}(image=${spell.image.full})}" data-image-width="138" data-image-height="138">-->
+                        <!--                        </div>-->
+                        <div class="">
+                            <p>
+                                <span style="font-weight: 700;">Historia postaci</span>
+                                <br>
+                                <span th:text="${champion.lore}"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <span style="font-weight: 700;">Wskazówki dla sojuszników:</span>
+                        <p>
+                            <span th:text="${champion.allytips}"></span>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <span style="font-weight: 700;">Wskazówki dla przeciwników:</span>
+                        <p>
+                            <span th:text="${champion.enemytips}"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 <section class="u-align-center u-clearfix u-section-2" id="sec-0973">
     <div class="u-clearfix u-sheet u-sheet-1"></div>
 </section>
-<!--<body>-->
-<!--<table>-->
-<!--&lt;!&ndash;        <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>&ndash;&gt;-->
-<!--&lt;!&ndash;        <td><span th:text="${championstats.hp}"> Bohater </span></td>&ndash;&gt;-->
-<!--&lt;!&ndash;        <td><span th:text="${champion.title}"> Tytuł </span></td>&ndash;&gt;-->
-<!--&lt;!&ndash;        <td><span th:text="${champion.image.full}"> Tytuł </span></td>&ndash;&gt;-->
-
-<!--   <tr>-->
-<!--       <td>Image: </td>-->
-<!--       <td><a th:href = "@{/v1/champions/single?id={id}(id=${champion.name})}"><img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px" /></a></td>-->
-<!--   </tr>-->
-<!--    <tr>-->
-<!--       <td>Name: </td>-->
-<!--       <td><span th:text="${champion.name}"> Bohater </span></td>-->
-<!--   </tr>-->
-<!--    <tr>-->
-<!--       <td>Hp: </td>-->
-<!--       <td><span th:text="${champion.stats.hp}"> Bohater </span></td>-->
-<!--   </tr>-->
-<!--    <tr>-->
-<!--       <td>Hp per level: </td>-->
-<!--       <td><span th:text="${champion.stats.hpperlevel}"> Bohater </span></td>-->
-<!--   </tr>-->
-<!--    <tr>-->
-<!--       <td>Mp: </td>-->
-<!--       <td><span th:text="${champion.stats.mp}"> Bohater </span></td>-->
-<!--   </tr>-->
-<!--    <tr>-->
-<!--       <td>Armor: </td>-->
-<!--       <td><span th:text="${champion.stats.armor}"> Bohater </span></td>-->
-<!--   </tr>-->
-<!--</table>-->
-<!--</body>-->
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
     <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">LOLKNOW isn't endorsed by Riot Games and doesn't reflect

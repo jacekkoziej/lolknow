@@ -69,12 +69,5 @@ public class ShowRankingController {
         return "over 9000";
     }
 
-    @GetMapping("/test")
-    public List<Player> showRanking3(){
-        List<Player> sortedPlayers = rankingService.getAll().stream()
-                .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
-                .collect(Collectors.toList());
 
-        return sortedPlayers;
-    }
 }
