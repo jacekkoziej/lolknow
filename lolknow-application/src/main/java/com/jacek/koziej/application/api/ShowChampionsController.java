@@ -26,7 +26,6 @@ import java.util.stream.Collectors;
 public class ShowChampionsController {
 
     private List<Champion> allChampions;
-    private Spell passive;
 
     @GetMapping("/all")
     public String allChampions(Model model) {
@@ -43,13 +42,9 @@ public class ShowChampionsController {
         return "champion";
     }
     @GetMapping("/test")
-    public String test(){
-        StringBuilder stringBuilder = new StringBuilder();
-        Champion champion = new ChampionService().getAll();
-
-        stringBuilder.append(champion.getPassive().getName());
-
-
-        return stringBuilder.toString();
+    public String test(Model model) {
+        if (allChampions == null)  allChampions = new ChampionsService().getAll();
+        model.addAttribute("champions", allChampions);
+        return "champions";
     }
 }

@@ -5,35 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/ChampionData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image__1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image__2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Leveltip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Passive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Recommended.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Skin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowAboutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowChampionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowChampionsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/ChampionsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/ChampionsClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champions.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Champions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/ChampionsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champions.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Champions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,6 +260,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -281,7 +269,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/static/img/loading" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/static/js.cssandjs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -296,11 +284,11 @@
       <recent name="com.jacek.koziej.application.api.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\img\loading" />
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static" />
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\js.cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\templates" />
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\css" />
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\img\loading" />
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
@@ -399,7 +387,7 @@
       <workItem from="1615990658595" duration="3805000" />
       <workItem from="1616013479128" duration="216000" />
       <workItem from="1616843408663" duration="3478000" />
-      <workItem from="1616860979952" duration="58892000" />
+      <workItem from="1616860979952" duration="69954000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -457,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617048863191</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test commit to remove after">
+      <created>1617828320821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617828320821</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -526,7 +521,8 @@
     <MESSAGE value="added champion stats html" />
     <MESSAGE value="adjusting image size and champion stats displayed" />
     <MESSAGE value="editing champion stats view" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing champion stats view" />
+    <MESSAGE value="test commit to remove after" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit to remove after" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

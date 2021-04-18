@@ -1,7 +1,10 @@
 package com.jacek.koziej.application.api;
 
+import com.jacek.koziej.integration.ChampionsService;
 import com.jacek.koziej.integration.RankingService;
+import com.jacek.koziej.integration.model.Champion;
 import com.jacek.koziej.integration.model.Player;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +17,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/v1/ranking")
 public class ShowRankingController {
+
+    private List<Player> bestPlayers;
 
     @GetMapping("/challenger")
     public String showRanking2(){
@@ -40,10 +45,24 @@ public class ShowRankingController {
 
         return stringBuilder.toString();
     }
+    @GetMapping("/all")
+    public String bestPlayers(Model model) {
+        if (bestPlayers == null)  bestPlayers = new RankingService().getAll();
+        model.addAttribute("ranking", bestPlayers);
+        return "ranking";
+    }
 
     @GetMapping("/*")
     public String defaultOver9000(){
         return "over 9000";
     }
 
+    @GetMapping("/test")
+    public List<Player> showRanking3(){
+        List<Player> sortedPlayers = new RankingService().getAll().stream()
+                .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
+                .collect(Collectors.toList());
+
+        return sortedPlayers;
+    }
 }
