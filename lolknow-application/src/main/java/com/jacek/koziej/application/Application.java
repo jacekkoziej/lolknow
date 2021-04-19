@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 @SpringBootApplication(scanBasePackages = "com.jacek.koziej")
 @EnableFeignClients(basePackages = "com.jacek.koziej")
-public class Application {
+public class  Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class);

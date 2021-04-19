@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/SummonerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Summoner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -326,12 +334,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="lolknow-application" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jacek.koziej.application.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs>
-        <env name="RIOT_TOKEN" value="RGAPI-ceb196fb-cd24-4754-8ee4-a36555c4d6ed" />
+        <env name="RIOT_TOKEN" value="RGAPI-fddb0dc0-d972-4e7e-b5dd-1d33a41d8270" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -383,6 +402,8 @@
       <workItem from="1616843408663" duration="3478000" />
       <workItem from="1616860979952" duration="78246000" />
       <workItem from="1618751722961" duration="14018000" />
+      <workItem from="1618766803626" duration="425000" />
+      <workItem from="1618835296905" duration="9008000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -468,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618765568879</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="styling ranking table">
+      <created>1618767125760</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618767125760</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -541,7 +569,8 @@
     <MESSAGE value="added htmls about, contact" />
     <MESSAGE value="rebuilded feign clients, added integration with champion service using name parameter" />
     <MESSAGE value="added skills, lore and ally/enemy tips, fixed ranking endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="added skills, lore and ally/enemy tips, fixed ranking endpoint" />
+    <MESSAGE value="styling ranking table" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling ranking table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

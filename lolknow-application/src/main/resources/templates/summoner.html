@@ -3,17 +3,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="INTUITIVE, Secrets">
+    <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Szukaj</title>
-    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/nicepage.css" media="screen">-->
-    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/home.css" media="screen">-->
+    <title>Ranking</title>
     <link rel="stylesheet" th:href="@{/styles/cssandjs/nicepage.css}" media="screen">
-    <link rel="stylesheet" th:href="@{/styles/cssandjs/champions.css}" media="screen">
+    <link rel="stylesheet" th:href="@{/styles/cssandjs/about.css}" media="screen">
     <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/jquery.js}" defer=""></script>
     <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/nicepage.js}" defer=""></script>
-    <meta name="generator" content="Nicepage 3.10.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
@@ -22,10 +19,9 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "name": "",
-        "url": "home.html",
-        "logo": "images/default-logo.png"
+        "url": "index.html"
     }</script>
-    <meta property="og:title" content="Szukaj">
+    <meta property="og:title" content="Summoner">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
@@ -81,23 +77,26 @@
         </nav>
     </div>
 </header>
-<section class="u-align-center u-clearfix u-grey-10" id="sec-654e">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1">Bohaterowie</h2>
-        <p class="u-text u-text-2">Wybierz bohatera aby wyświetlić jego szczegółowy opis</p>
-    </div>
-    <div th:each="champion : ${champions}" style=display:inline-block>
-        <a th:href="@{/v1/champions/single?id={id}(id=${champion.name})}">
-            <img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px"/></a>
-    </div>
+<section style="align-content: center" class="u-align-center u-clearfix u-grey-10" id="sec-654e">
+    <table style="width:50%; margin-left:330px; margin-top:40px">
+        <tr>
+            <td>Nick</td>
+            <td><strong><span th:text="${summoner.name}"></span></strong></td>
+        </tr>
+        <tr>
+            <td>Level</td>
+            <td><strong><span th:text="${summoner.summonerLevel}"></span></strong></td>
+        </tr>
+    </table>
 </section>
-</body>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
     <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">LOLKNOW isn't endorsed by Riot Games and doesn't reflect
             the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games
             properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games,
             Inc.</p>
+        <p class="u-align-center u-small-text u-text u-text-font u-text-variant u-text-2">Przygotował Jacek Koziej</p>
     </div>
 </footer>
+</body>
 </html>
