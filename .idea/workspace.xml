@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/SummonerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Summoner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/nicepage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +344,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jacek.koziej.application.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <envs>
-        <env name="RIOT_TOKEN" value="RGAPI-fddb0dc0-d972-4e7e-b5dd-1d33a41d8270" />
+        <env name="RIOT_TOKEN" value="RGAPI-7afdfb28-65a0-4e86-b380-ee707071f5c6" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -403,7 +397,7 @@
       <workItem from="1616860979952" duration="78246000" />
       <workItem from="1618751722961" duration="14018000" />
       <workItem from="1618766803626" duration="425000" />
-      <workItem from="1618835296905" duration="9008000" />
+      <workItem from="1618835296905" duration="10680000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -496,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618767125760</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="get summoner by name attempt">
+      <created>1618863189649</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618863189649</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -570,7 +571,8 @@
     <MESSAGE value="rebuilded feign clients, added integration with champion service using name parameter" />
     <MESSAGE value="added skills, lore and ally/enemy tips, fixed ranking endpoint" />
     <MESSAGE value="styling ranking table" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling ranking table" />
+    <MESSAGE value="get summoner by name attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="get summoner by name attempt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,6 +4,7 @@ import com.jacek.koziej.integration.ChampionsService;
 import com.jacek.koziej.integration.SummonerService;
 import com.jacek.koziej.integration.model.Champion;
 import com.jacek.koziej.integration.model.Summoner;
+import feign.FeignException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,8 +25,14 @@ public class ShowSummonerController {
 
     @GetMapping("/details")
     public String summoner(Model model, @RequestParam("name") String name) {
-        model.addAttribute("summoner", summonerService.get(name));
-        return "summoner";
+        try {
+            model.addAttribute("summoner", summonerService.get(name));
+            return "summoner";
+        } catch (FeignException exception) {
+            if (exception.status() == 404) {
+                return "home";
+            }
+            throw exception;
+        }
     }
-
 }

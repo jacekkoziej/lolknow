@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "summonerClient", url = "https://eun1.api.riotgames.com/lol/summoner/v4/")
 public interface SummonerClient {
 
-    @GetMapping(value = "summoners/by-name/{name}.json", produces = "application/json")
+    @GetMapping(value = "summoners/by-name/{name}", produces = "application/json")
     Summoner getSummonerByName(@PathVariable("name") String name);
 }
