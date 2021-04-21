@@ -87,8 +87,8 @@
         <p class="u-text u-text-2">Wybierz bohatera aby wyświetlić jego szczegółowy opis</p>
     </div>
     <div th:each="champion : ${champions}" style=display:inline-block>
-        <a th:href="@{/v1/champions/single?id={id}(id=${champion.name})}">
-            <img th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px"/></a>
+        <a th:href="@{/v1/champions/single?id={id}(id=${champion.name})}"><img
+                th:src="@{/img/champion/{image}(image=${champion.image.full})}" style="width:90px;height:90px"/></a>
     </div>
 </section>
 </body>

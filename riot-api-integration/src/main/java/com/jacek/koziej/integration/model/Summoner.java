@@ -42,7 +42,7 @@ public class Summoner {
     }
 
     public String getProfileIconId() {
-        return profileIconId;
+        return profileIconId + ".png";
     }
 
     public void setProfileIconId(String profileIconId) {

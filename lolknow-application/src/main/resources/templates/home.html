@@ -118,12 +118,9 @@
                     <input type="text" placeholder="nick przywoływacza" id="name-bc1f" name="name"
                            class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""
                            th:name="name">
+<!--                    <p th:if="${#fields.hasErrors('name')}">Wprowadzony nick nie istnieje!</p>-->
                 </div>
                 <div class="u-align-center u-form-group u-form-submit">
-                    <!--                    <a th:href="@{/v1/summoner/details?name={name}}"-->
-                    <!--                       class="u-btn u-btn-round u-btn-submit u-button-style u-palette-1-light-1 u-radius-10 u-btn-1">Szukaj<br>-->
-                    <!--                    </a>-->
-                    <!--                    <input type="submit" value="submit" class="u-form-control-hidden" >-->
                     <input type="submit" value="Szukaj" class="u-btn u-btn-round u-btn-submit u-button-style u-palette-1-light-1 u-radius-10 u-btn-1"/>
                 </div>
             </form>
