@@ -2,6 +2,7 @@ package com.jacek.koziej.integration;
 
 import com.jacek.koziej.integration.feign.services.LadderClient;
 import com.jacek.koziej.integration.model.Player;
+import com.jacek.koziej.integration.model.Summoner;
 import feign.Feign;
 import feign.gson.GsonDecoder;
 import feign.gson.GsonEncoder;

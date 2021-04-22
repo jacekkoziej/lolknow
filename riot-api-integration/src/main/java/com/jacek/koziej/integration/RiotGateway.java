@@ -12,14 +12,14 @@ import java.io.IOException;
 public class RiotGateway {
 
 
-    public static String callService(HttpRequestBase request) throws IOException {
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        request.setHeader("X-Riot-Token", "RGAPI-9cba57ae-18e4-45f7-98de-6b5718c054d1");
-        CloseableHttpResponse response = httpClient.execute(request);
-        HttpEntity entity = response.getEntity();
-        if (entity != null) {
-           return EntityUtils.toString(entity);
-        }
-        throw new IllegalStateException("no entity");
-    }
+//    public static String callService(HttpRequestBase request) throws IOException {
+//        CloseableHttpClient httpClient = HttpClients.createDefault();
+//        request.setHeader("X-Riot-Token", "RGAPI-9cba57ae-18e4-45f7-98de-6b5718c054d1");
+//        CloseableHttpResponse response = httpClient.execute(request);
+//        HttpEntity entity = response.getEntity();
+//        if (entity != null) {
+//           return EntityUtils.toString(entity);
+//        }
+//        throw new IllegalStateException("no entity");
+//    }
 }

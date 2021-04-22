@@ -1,32 +1,22 @@
 package com.jacek.koziej.integration.model;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
-public class Player {
-    private String leagueId;
-    private String queueType;
-    private String tier;
-    private String rank;
-    private String summonerId;
-    private String summonerName;
-    private String leaguePoints;
-    private String wins;
-    private String losses;
-    private String veteran;
-    private String inactive;
-    private String freshBlood;
-    private String hotStreak;
-    private ArrayList<RankingInfo> entries;
+public class RankingInfo {
+   private String leagueId;
+   private String queueType;
+   private String tier;
+   private String rank;
+   private String summonerId;
+   private String summonerName;
+   private String leaguePoints;
+   private String wins;
+   private String losses;
+   private String veteran;
+   private String inactive;
+   private String freshBlood;
+   private String hotStreak;
 
-    public ArrayList<RankingInfo> getEntries() {
-        return entries;
-    }
-
-    public void setEntries(ArrayList<RankingInfo> entries) {
-        this.entries = entries;
-    }
 
     public String getLeagueId() {
         return leagueId;
@@ -131,5 +121,4 @@ public class Player {
     public void setHotStreak(String hotStreak) {
         this.hotStreak = hotStreak;
     }
-
 }

@@ -1,6 +1,7 @@
 package com.jacek.koziej.application.api;
 
 import com.jacek.koziej.integration.ChampionsService;
+import com.jacek.koziej.integration.RankingService;
 import com.jacek.koziej.integration.SummonerService;
 import com.jacek.koziej.integration.model.Champion;
 import com.jacek.koziej.integration.model.Summoner;
@@ -23,10 +24,14 @@ public class ShowSummonerController {
         this.summonerService = summonerService;
     }
 
+
     @GetMapping("/details")
     public String summoner(Model model, @RequestParam("name") String name) {
         try {
-            model.addAttribute("summoner", summonerService.get(name));
+            Summoner summoner = summonerService.get(name);
+            model.addAttribute("summoner", summoner);
+            String encryptedSummonerId = summoner.getId();
+            model.addAttribute("player", summonerService.getRankingData(encryptedSummonerId));
             return "summoner";
         } catch (FeignException exception) {
             if (exception.status() == 404) {

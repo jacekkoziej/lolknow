@@ -4,11 +4,13 @@ import com.jacek.koziej.integration.ChampionsService;
 import com.jacek.koziej.integration.RankingService;
 import com.jacek.koziej.integration.model.Champion;
 import com.jacek.koziej.integration.model.Player;
+import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Comparator;
@@ -29,7 +31,7 @@ public class ShowRankingController {
     }
 
     @GetMapping("/challenger")
-    public String showRanking2(){
+    public String showRanking2() {
         StringBuilder stringBuilder = new StringBuilder();
         //creating list and sorting by ranking using stream
         List<Player> sortedPlayers = rankingService.getAll().stream()
@@ -53,9 +55,10 @@ public class ShowRankingController {
 
         return stringBuilder.toString();
     }
+
     @GetMapping("/all")
     public String bestPlayers(Model model) {
-        if (bestPlayers == null)  bestPlayers = rankingService
+        if (bestPlayers == null) bestPlayers = rankingService
                 .getAll()
                 .stream()
                 .sorted(Comparator.comparing(Player::getLeaguePoints).reversed())
@@ -63,11 +66,5 @@ public class ShowRankingController {
         model.addAttribute("ranking", bestPlayers);
         return "ranking";
     }
-
-    @GetMapping("/*")
-    public String defaultOver9000(){
-        return "over 9000";
-    }
-
 
 }
