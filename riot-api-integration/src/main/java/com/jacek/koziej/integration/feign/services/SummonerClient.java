@@ -15,5 +15,5 @@ public interface SummonerClient {
     Summoner getSummonerByName(@PathVariable("name") String name);
 
     @GetMapping(value = "lol/league/v4/entries/by-summoner/{encryptedSummonerId}", produces = "application/json")
-    Player getPlayerBySummonerId(@PathVariable("encryptedSummonerId") String encryptedSummonerId);
+    List<RankingInfo> getPlayerBySummonerId(@PathVariable("encryptedSummonerId") String encryptedSummonerId);
 }

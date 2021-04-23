@@ -87,11 +87,14 @@
             <td>Level</td>
             <td><strong><span th:text="${summoner.summonerLevel}"></span></strong></td>
         </tr>
-        <tr>
-            <td>Wins</td>
-            <td><strong><span th:text="${player.wins}"></span></strong></td>
-        </tr>
+<!--        <tr>-->
+<!--            <td>Wins</td>-->
+<!--            <td><strong><span th:text="${player.wins}"></span></strong></td>-->
+<!--        </tr>-->
     </table>
+    <div th:each="rankinginfo : ${player}" style=display:inline-block>
+        <span th:text="${rankinginfo.wins}"></span>
+    </div>
     <img th:src="@{/img/profileicon/{image}(image=${summoner.profileIconId})}" style="width:90px;height:90px"/>
 </section>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">

@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/RankingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowSummonerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champion.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RankingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RiotGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RiotGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/SummonerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/SummonerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/LadderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/LadderClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/feign/services/SummonerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RankingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RiotGateway.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RiotGateway.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/model/Player.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +397,7 @@
       <workItem from="1616860979952" duration="78246000" />
       <workItem from="1618751722961" duration="14018000" />
       <workItem from="1618766803626" duration="425000" />
-      <workItem from="1618835296905" duration="28417000" />
+      <workItem from="1618835296905" duration="29016000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -523,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619041355802</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added ranking info service called with summoner id parameter">
+      <created>1619124719090</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1619124719090</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -600,7 +595,8 @@
     <MESSAGE value="get summoner by name attempt" />
     <MESSAGE value="added working summoner controller, fixed thymeleaf problem with redirecting to summoners details" />
     <MESSAGE value="some minor styling changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some minor styling changes" />
+    <MESSAGE value="added ranking info service called with summoner id parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ranking info service called with summoner id parameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

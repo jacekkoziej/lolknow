@@ -23,10 +23,8 @@ public class SummonerService {
     }
 
     public List<RankingInfo> getRankingData(String encryptedSummonerId) {
-        return new ArrayList<>(summonerClient
-                .getPlayerBySummonerId(encryptedSummonerId)
-                .getEntries()
-        );
+        return summonerClient
+                .getPlayerBySummonerId(encryptedSummonerId);
     }
 
 }
