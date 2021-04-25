@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="display all kinds of ranking queues">
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/font/dosis.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/font/dosis.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/szukaj.css" afterDir="false" />
+    <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/summoner.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/szukaj.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/szukaj.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/RankingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/RankingInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +267,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/static/font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lolknow-application/src/main/resources/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -286,11 +283,11 @@
       <recent name="com.jacek.koziej.application.api.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\templates" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\font" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\img" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\js.cssandjs" />
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\styles\cssandjs" />
-      <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\workspace\lolknow\lolknow-application\src\main\resources\static\font" />
@@ -403,7 +400,7 @@
       <workItem from="1616860979952" duration="78246000" />
       <workItem from="1618751722961" duration="14018000" />
       <workItem from="1618766803626" duration="425000" />
-      <workItem from="1618835296905" duration="50981000" />
+      <workItem from="1618835296905" duration="53552000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -531,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619208905650</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new home page layout (html, css)">
+      <created>1619379019649</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1619379019649</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -611,7 +615,8 @@
     <MESSAGE value="added ranking info service called with summoner id parameter" />
     <MESSAGE value="working ranking info" />
     <MESSAGE value="display all kinds of ranking queues" />
-    <option name="LAST_COMMIT_MESSAGE" value="display all kinds of ranking queues" />
+    <MESSAGE value="new home page layout (html, css)" />
+    <option name="LAST_COMMIT_MESSAGE" value="new home page layout (html, css)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

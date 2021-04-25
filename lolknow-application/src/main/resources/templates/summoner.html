@@ -3,133 +3,71 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Ranking</title>
-    <link rel="stylesheet" th:href="@{/styles/cssandjs/nicepage.css}" media="screen">
-    <link rel="stylesheet" th:href="@{/styles/cssandjs/about.css}" media="screen">
-    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/jquery.js}" defer=""></script>
-    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/nicepage.js}" defer=""></script>
-    <link id="u-theme-google-font" rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-
-
-    <script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "",
-        "url": "index.html"
-    }</script>
-    <meta property="og:title" content="Summoner">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
+    <title>Gracz</title>
+    <link rel="stylesheet" th:href="@{/styles/cssandjs/summoner.css}" media="screen">
+    <meta property="og:title" content="">
 </head>
-<body class="u-body">
-<header class="u-clearfix u-header u-header" id="sec-d054">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="/" class="u-image u-logo u-image-1">
-            <img th:src="@{/logo/img.png}"/>
+<div class="site" xmlns:th="http://www.w3.org/1999/xhtml">
+    <header class="site-header">
+        <a href="/" style="text-decoration: none">
+            <h1 class="site-title">lolknow</h1>
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                   href="#">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-                    </svg>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
-                                <rect y="1" width="16" height="2"></rect>
-                                <rect y="7" width="16" height="2"></rect>
-                                <rect y="13" width="16" height="2"></rect>
-                            </symbol>
-                        </defs>
-                    </svg>
-                </a>
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="/">Szukaj</a></li>
+                <li><a href="/v1/ranking/all">Ranking</a></li>
+                <li><a href="/v1/champions/all">Bohaterowie</a></li>
+                <li><a href="/v1/contact/">Kontakt</a></li>
+                <li><a href="/v1/about/">O aplikacji</a></li>
+            </ul>
+        </nav><!-- .site-navigation -->
+    </header><!-- .site-header -->
+    <main class="content">
+        <div class="info">
+            <div class="summoner-icon">
+                <img class="icon" th:src="@{/img/profileicon/{image}(image=${summoner.profileIconId})}"/>
             </div>
-            <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-unstyled u-nav-1">
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/ranking/all"
-                            style="padding: 10px 20px;">Ranking</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            style="padding: 10px 20px;"
-                            href="/v1/champions/all">Bohaterowie</a>
+            <div class="summoner-info">
+                <div th:text="${summoner.name}"></div>
+                <div><span th:text="${summoner.summonerLevel}"></span> lvl</div>
+            </div>
+        </div>
 
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/contact/">Kontakt</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/about/" style="padding: 10px 20px;">O aplikacji</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
-<section style="align-content: center" class="u-align-center u-clearfix u-grey-10" id="sec-654e">
-    <table style="width:50%; margin-left:330px; margin-top:40px">
-        <thead>
-        <tr>
-            <th>Podstawowe informacje</th>
-        </tr>
-        </thead>
-        <tr>
-            <td>Nick</td>
-            <td><strong><span th:text="${summoner.name}"></span></strong></td>
-        </tr>
-        <tr>
-            <td>Level</td>
-            <td><strong><span th:text="${summoner.summonerLevel}"></span></strong></td>
-        </tr>
-    </table>
-    <table th:each="rankinginfo : ${player}" style=display:inline-block>
-        <thead>
-        <tr>
-            <th th:text="${rankinginfo.queueType}"></th>
-        </tr>
-        </thead>
-        <tr>
-            <td>Liga</td>
-            <td><strong><span th:text="${rankinginfo.tier}"></span></strong></td>
-        </tr>
-        <tr>
-            <td>Liczba punktów</td>
-            <td><strong><span th:text="${rankinginfo.leaguePoints}"></span></strong></td>
-        </tr>
-        <tr>
-            <td>Wygrane</td>
-            <td><strong><span th:text="${rankinginfo.wins}"></span></strong></td>
-        </tr>
-        <tr>
-            <td>Przegrane</td>
-            <td><strong><span th:text="${rankinginfo.losses}"></span></strong></td>
-        </tr>
-        <tr>
-            <td>Seria zwycięstw</td>
-            <td><strong><span th:text="${rankinginfo.hotStreak}"></span></strong></td>
-        </tr>
-    </table>
-    <img th:src="@{/img/profileicon/{image}(image=${summoner.profileIconId})}" style="width:90px;height:90px"/>
-</section>
-<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">LOLKNOW isn't endorsed by Riot Games and doesn't reflect
-            the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games
-            properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games,
-            Inc.</p>
-        <p class="u-align-center u-small-text u-text u-text-font u-text-variant u-text-2">Przygotował Jacek Koziej</p>
-    </div>
-</footer>
-</body>
+        <table th:each="rankinginfo : ${player}" style=display:inline-block>
+            <thead>
+            <tr>
+                <th th:text="${rankinginfo.queueType}"></th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Liga</td>
+                <td><strong><span th:text="${rankinginfo.tier}"></span></strong></td>
+            </tr>
+            <tr>
+                <td>Liczba punktów</td>
+                <td><strong><span th:text="${rankinginfo.leaguePoints}"></span></strong></td>
+            </tr>
+            <tr>
+                <td>Wygrane</td>
+                <td><strong><span th:text="${rankinginfo.wins}"></span></strong></td>
+            </tr>
+            <tr>
+                <td>Przegrane</td>
+                <td><strong><span th:text="${rankinginfo.losses}"></span></strong></td>
+            </tr>
+            <tr>
+                <td>Seria zwycięstw</td>
+                <td><strong><span th:text="${rankinginfo.hotStreak}"></span></strong></td>
+            </tr>
+        </table>
+
+    </main>
+    <footer class="site-footer">
+        <p>LOLKNOW isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone
+            officially involved in producing or managing Riot Games properties. Riot Games, and all associated
+            properties are trademarks or registered trademarks of Riot Games, Inc.
+        </p>
+    </footer><!-- .site-footer -->
+</div><!-- .site -->
+
 </html>
