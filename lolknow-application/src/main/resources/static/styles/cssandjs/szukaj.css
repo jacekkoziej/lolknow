@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('static/font/dosis.woff2') format('woff2'),
+    url('static/font/dosis.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+Website Name: One Column Layout
+Description: A one column layout for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    background-color: #FCF7FF;
+    font-size: 16px;
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.site {
+    background-color: #FCF7FF;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* =Elements
+---------------------------*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 26px;
+}
+p {
+    margin-bottom: 26px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* =Header
+---------------------------*/
+.site-header {
+    padding: 40px;
+    text-align: center;
+    background-color: #FCF7FF;
+    color: #655560;
+}
+.site-title {
+    margin: 0;
+}
+@media (min-width: 800px) {
+    .site-title {
+        float: left;
+    }
+}
+
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li {
+    display: inline-block;
+}
+.site-navigation a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #655560;
+    padding: 0 20px;
+}
+.site-navigation a:hover {
+    color: #4cacbe;
+}
+
+@media (min-width: 800px) {
+    .site-navigation {
+        float: right;
+    }
+    .site-navigation a {
+        padding: 0 0 0 20px;
+    }
+}
+
+/* =Content
+---------------------------*/
+.content-wrapper {
+    padding: 40px;
+    min-height: 100%;
+    margin-bottom: -100px;
+    flex: 1 0 auto;
+}
+main{
+    background: white;
+    margin: 0 auto;
+    color: white;
+    margin: 5px auto;
+}
+/*main:nth-child(1) {*/
+/*    margin: 0 auto;*/
+/*}*/
+/*main div:nth-child(2) {*/
+/*    margin: 0 auto;*/
+/*}*/
+/*main div:nth-child(3) {*/
+/*    margin: 0 auto;*/
+/*}*/
+.content{
+    min-height: calc(100vh - 180px);
+    color:black;
+    background-color: #d6dce2;
+    border-radius: 10px;
+}
+
+.tb
+{
+    display: table;
+    width: 100%;
+}
+
+.td
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, button
+{
+    color: #fff;
+    font-family: Dosis, sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#cover
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 550px;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #96a5af;
+    border-radius: 20px;
+    border: 1px solid black;
+    transform: scale(0.6);
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+input[type="text"]::placeholder
+{
+    color: #e7e2e2;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+button
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+button span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before, #s-cover:hover button span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #FCF7FF;
+}
+
+#ytd-url {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px 14px;
+    margin: 20px;
+    color: #fff;
+    font-family:  Dosis, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #79746e;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px -5px rgb(121, 116, 110);
+    z-index: 125;
+}
+/* =Footer
+---------------------------*/
+.site-footer {
+    background-color: #FCF7FF;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    color: #655560;
+}
+
+@media (min-width: 800px) {
+    .site-footer {
+        clear: both;
+        text-align: center;
+    }
+    .site-footer .column {
+        width: 32%;
+        float: left;
+        padding-right: 2%;
+        margin-bottom: 2%;
+    }
+    .site-footer .column.last {
+        padding-right: 0;
+    }
+}
+

@@ -3,19 +3,19 @@ package com.jacek.koziej.integration.model;
 import java.util.Map;
 
 public class RankingInfo {
-   private String leagueId;
-   private String queueType;
-   private String tier;
-   private String rank;
-   private String summonerId;
-   private String summonerName;
-   private String leaguePoints;
-   private String wins;
-   private String losses;
-   private String veteran;
-   private String inactive;
-   private String freshBlood;
-   private String hotStreak;
+    private String leagueId;
+    private String queueType;
+    private String tier;
+    private String rank;
+    private String summonerId;
+    private String summonerName;
+    private String leaguePoints;
+    private String wins;
+    private String losses;
+    private String veteran;
+    private String inactive;
+    private String freshBlood;
+    private String hotStreak;
 
 
     public String getLeagueId() {
@@ -27,7 +27,13 @@ public class RankingInfo {
     }
 
     public String getQueueType() {
-        return queueType;
+        if (queueType.equals("RANKED_SOLO_5x5")) {
+            return "Flex Kolejka";
+        }
+        else if (queueType.equals("RANKED_FLEX_SR")) {
+            return "Solo Kolejka";
+        }
+        else return queueType;
     }
 
     public void setQueueType(String queueType) {
