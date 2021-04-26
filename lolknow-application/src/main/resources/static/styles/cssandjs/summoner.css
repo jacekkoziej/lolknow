@@ -126,7 +126,7 @@ main{
     border-radius: 10px;
 }
 .info{
-    width: 500px;
+    width: 300px;
     margin: 0 auto;
     padding: 10px;
     position: relative;
@@ -138,7 +138,7 @@ main{
     border-radius:5px;
     border: 1px solid black;
     margin-top: 40px;
-    margin-left: 30px;
+
 }
 .summoner-icon{
 
@@ -149,7 +149,7 @@ main{
     padding: 0 40px;
     font-weight: 500;
     font-size: x-large;
-    width: 70%;
+    width: 60%;
     margin-top: 15px;
     position:absolute;
     right: 0;
@@ -157,6 +157,27 @@ main{
     vertical-align: top;
     top: 50%;
     transform: translateY(-50%)
+}
+.tables{
+    max-width: 1080px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.stats-table{
+    max-width: 1080px;
+    margin: 20px auto 0;
+    border: 1px solid #ad9e9e;
+    background: #eef7ff;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    border-spacing: 0.7rem;
+}
+
+th{
+    margin-left:50px;
+    font-size: x-large;
 }
 /* =Footer
 ---------------------------*/

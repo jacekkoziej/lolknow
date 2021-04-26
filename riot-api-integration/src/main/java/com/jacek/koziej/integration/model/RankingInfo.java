@@ -16,7 +16,22 @@ public class RankingInfo {
     private String inactive;
     private String freshBlood;
     private String hotStreak;
+    private String wlratio;
 
+    public String calculateWlratio(String wins, String losses){
+        float w = Float.parseFloat(getWins());
+        float l = Float.parseFloat(getLosses());
+        float wlratio = w/l;
+        return Float.toString(wlratio);
+    }
+    public String getWlratio() {
+        wlratio = calculateWlratio(getWins(),getLosses());
+        return wlratio;
+    }
+
+    public void setWlratio(String wlratio) {
+        this.wlratio = wlratio;
+    }
 
     public String getLeagueId() {
         return leagueId;
@@ -121,7 +136,10 @@ public class RankingInfo {
     }
 
     public String getHotStreak() {
-        return hotStreak;
+        if(hotStreak.equals("true")){
+            return "Passa zwycięstw!";
+        }
+        return "Brak passy 🙁";
     }
 
     public void setHotStreak(String hotStreak) {

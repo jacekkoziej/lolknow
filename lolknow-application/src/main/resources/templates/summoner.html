@@ -32,35 +32,39 @@
                 <div><span th:text="${summoner.summonerLevel}"></span> lvl</div>
             </div>
         </div>
-
-        <table th:each="rankinginfo : ${player}" style=display:inline-block>
-            <thead>
-            <tr>
-                <th th:text="${rankinginfo.queueType}"></th>
-            </tr>
-            </thead>
-            <tr>
-                <td>Liga</td>
-                <td><strong><span th:text="${rankinginfo.tier}"></span></strong></td>
-            </tr>
-            <tr>
-                <td>Liczba punktów</td>
-                <td><strong><span th:text="${rankinginfo.leaguePoints}"></span></strong></td>
-            </tr>
-            <tr>
-                <td>Wygrane</td>
-                <td><strong><span th:text="${rankinginfo.wins}"></span></strong></td>
-            </tr>
-            <tr>
-                <td>Przegrane</td>
-                <td><strong><span th:text="${rankinginfo.losses}"></span></strong></td>
-            </tr>
-            <tr>
-                <td>Seria zwycięstw</td>
-                <td><strong><span th:text="${rankinginfo.hotStreak}"></span></strong></td>
-            </tr>
-        </table>
-
+        <div class="tables">
+            <table class="stats-table" th:each="rankinginfo : ${player}">
+                <thead>
+                <tr>
+                    <th th:text="${rankinginfo.queueType}"></th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Liga</td>
+                    <td><strong><span th:text="${rankinginfo.tier}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Liczba punktów</td>
+                    <td><strong><span th:text="${rankinginfo.leaguePoints}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Wygrane</td>
+                    <td><strong><span th:text="${rankinginfo.wins}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Przegrane</td>
+                    <td><strong><span th:text="${rankinginfo.losses}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Współczynnik zwycięstw</td>
+                    <td><strong><span th:text="${rankinginfo.wlratio}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Seria zwycięstw</td>
+                    <td><strong><span th:text="${rankinginfo.hotStreak}"></span></strong></td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer class="site-footer">
         <p>LOLKNOW isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone
