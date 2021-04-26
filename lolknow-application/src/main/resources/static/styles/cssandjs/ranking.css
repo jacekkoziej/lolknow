@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('static/font/dosis.woff2') format('woff2'),
+    url('static/font/dosis.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+Website Name: One Column Layout
+Description: A one column layout for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    background-color: #FCF7FF;
+    font-size: 16px;
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.site {
+    background-color: #FCF7FF;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* =Elements
+---------------------------*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 26px;
+}
+p {
+    margin-bottom: 26px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* =Header
+---------------------------*/
+.site-header {
+    padding: 40px;
+    text-align: center;
+    background-color: #FCF7FF;
+    color: #655560;
+}
+.site-title {
+    margin: 0;
+}
+@media (min-width: 800px) {
+    .site-title {
+        float: left;
+    }
+}
+
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li {
+    display: inline-block;
+}
+.site-navigation a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #655560;
+    padding: 0 20px;
+}
+.site-navigation a:hover {
+    color: #4cacbe;
+}
+
+@media (min-width: 800px) {
+    .site-navigation {
+        float: right;
+    }
+    .site-navigation a {
+        padding: 0 0 0 20px;
+    }
+}
+
+/* =Content
+---------------------------*/
+.content-wrapper {
+    padding: 40px;
+    min-height: 100%;
+    margin-bottom: -100px;
+    flex: 1 0 auto;
+}
+main{
+    background: white;
+    margin: 0 auto;
+    color: white;
+    margin: 5px auto;
+}
+
+.content{
+    min-height: calc(100vh - 180px);
+    color:black;
+    background-color: #deecfb;
+    border-radius: 10px;
+    padding: 10px;
+}
+.table{
+    max-width: 1080px;
+    margin: 20px auto 0;
+    border: 1px solid #ad9e9e;
+    background: #eef7ff;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    border-spacing: 0.7rem;
+}
+/* =Footer
+---------------------------*/
+.site-footer {
+    background-color: #FCF7FF;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    color: #655560;
+}
+
+@media (min-width: 800px) {
+    .site-footer {
+        clear: both;
+        text-align: center;
+    }
+    .site-footer .column {
+        width: 32%;
+        float: left;
+        padding-right: 2%;
+        margin-bottom: 2%;
+    }
+    .site-footer .column.last {
+        padding-right: 0;
+    }
+}
+

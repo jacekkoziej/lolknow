@@ -1,148 +1,165 @@
-.u-section-1 {
-  background-image: none;
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('static/font/dosis.woff2') format('woff2'),
+  url('static/font/dosis.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.u-section-1 .u-sheet-1 {
-  min-height: 890px;
+/*
+Website Name: One Column Layout
+Description: A one column layout for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.u-section-1 .u-text-1 {
-  margin: 60px 20px 0;
+body {
+  font-family: Dosis, sans-serif;
+  background-color: #FCF7FF;
+  font-size: 16px;
+  min-height: 100%;
+  margin-bottom: -100px;
 }
 
-.u-section-1 .u-text-2 {
-  margin: 20px 0 0;
+.site {
+  background-color: #FCF7FF;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.champions-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+.champions{
+  display: inline-block;
+  border-spacing: 0.2rem;
+}
+.title-help{
+  text-align:center;
+  font-family: Dosis, sans-serif;;
+}
+/* =Elements
+---------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 26px;
+}
+p {
+  margin-bottom: 26px;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
-.u-section-1 .u-gallery-1 {
-  height: 581px;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 17px 17px;
-  margin: 30px auto 60px;
+/* =Header
+---------------------------*/
+.site-header {
+  padding: 40px;
+  text-align: center;
+  background-color: #FCF7FF;
+  color: #655560;
 }
-
-.u-section-1 .u-gallery-inner-1 {
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 17px;
+.site-title {
+  margin: 0;
 }
-
-.u-section-1 .u-over-slide-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-gallery-item-7 {
-  box-shadow: 0 0 0 0 rgba(0,0,0,0);
-}
-
-.u-section-1 .u-back-image-7 {
-  object-position: 50% 50%;
-}
-
-.u-section-1 .u-over-slide-7 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  transition-duration: 0.5s;
-  padding: 20px;
-}
-
-.u-section-1 .u-gallery-item-8 {
-  box-shadow: 0 0 0 0 rgba(0,0,0,0);
-}
-
-.u-section-1 .u-back-image-8 {
-  object-position: 50% 50%;
-}
-
-.u-section-1 .u-over-slide-8 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  transition-duration: 0.5s;
-  padding: 20px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 788px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    height: 479px;
-    margin-right: initial;
-    margin-left: initial;
+@media (min-width: 800px) {
+  .site-title {
+    float: left;
   }
 }
 
-@media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 1777px;
-  }
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+}
+.site-navigation a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #655560;
+  padding: 0 20px;
+}
+.site-navigation a:hover {
+  color: #4cacbe;
+}
 
-  .u-section-1 .u-gallery-1 {
-    height: 1468px;
-    grid-template-columns: auto auto;
-    margin-right: initial;
-    margin-left: initial;
+@media (min-width: 800px) {
+  .site-navigation {
+    float: right;
   }
-
-  .u-section-1 .u-gallery-inner-1 {
-    grid-template-columns: repeat(2, auto);
+  .site-navigation a {
+    padding: 0 0 0 20px;
   }
 }
 
-@media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 4713px;
-  }
+/* =Content
+---------------------------*/
+.content-wrapper {
+  padding: 40px;
+  min-height: 100%;
+  margin-bottom: -100px;
+  flex: 1 0 auto;
+}
+main{
+  background: white;
+  margin: 0 auto;
+  color: white;
+  margin: 5px auto;
+}
 
-  .u-section-1 .u-gallery-1 {
-    height: 4404px;
-    grid-template-columns: auto;
-    margin-right: initial;
-    margin-left: initial;
-  }
+.content{
+  min-height: calc(100vh - 180px);
+  color:black;
+  background-color: #deecfb;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* =Footer
+---------------------------*/
+.site-footer {
+  background-color: #FCF7FF;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  color: #655560;
+}
 
-  .u-section-1 .u-gallery-inner-1 {
-    grid-template-columns: repeat(1, auto);
+@media (min-width: 800px) {
+  .site-footer {
+    clear: both;
+    text-align: center;
+  }
+  .site-footer .column {
+    width: 32%;
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 2%;
+  }
+  .site-footer .column.last {
+    padding-right: 0;
   }
 }
 
-@media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 3082px;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    height: 2773px;
-    margin-right: initial;
-    margin-left: initial;
-  }
-}

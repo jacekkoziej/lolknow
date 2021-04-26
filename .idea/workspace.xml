@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03be5bd1-70f4-4412-80e6-54c8b4df0156" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/ranking.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/summoner.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/summoner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/summoner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/RiotGateway.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/RankingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/riot-api-integration/src/main/java/com/jacek/koziej/integration/model/RankingInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riot-api-integration/target/classes/com/jacek/koziej/integration/RiotGateway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/ShowRankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champions.css" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/static/styles/cssandjs/champions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/champions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/src/main/resources/templates/ranking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lolknow-application/target/classes/com/jacek/koziej/application/api/ShowRankingController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,7 +403,7 @@
       <workItem from="1616860979952" duration="78246000" />
       <workItem from="1618751722961" duration="14018000" />
       <workItem from="1618766803626" duration="425000" />
-      <workItem from="1618835296905" duration="54389000" />
+      <workItem from="1618835296905" duration="58252000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1614854528836</created>
@@ -544,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619381765168</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="summoner info layout revamp finished">
+      <created>1619460753373</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1619460753373</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -626,7 +634,8 @@
     <MESSAGE value="display all kinds of ranking queues" />
     <MESSAGE value="new home page layout (html, css)" />
     <MESSAGE value="summoner info layout revamp started" />
-    <option name="LAST_COMMIT_MESSAGE" value="summoner info layout revamp started" />
+    <MESSAGE value="summoner info layout revamp finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="summoner info layout revamp finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -660,6 +669,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((FeignInvocationHandler)this.h).target" custom="com.jacek.koziej.application.api.ShowRankingController,java.lang.reflect.Proxy,com.jacek.koziej.integration.RankingService,feign.ReflectiveFeign.FeignInvocationHandler" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lolknow-application/src/main/java/com/jacek/koziej/application/api/model/ShowChampionsController.java" />
