@@ -1,261 +1,151 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" xmlns:th="http://www.w3.org/1999/xhtml">
+<html style="font-size: 16px;" xmlns:th="http://www.w3.org/1999/xhtml" lang="pl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="INTUITIVE, Secrets">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Szukaj</title>
-    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/nicepage.css" media="screen">-->
-    <!--    <link rel="stylesheet" href="../static/styles/cssandjs/home.css" media="screen">-->
-    <link rel="stylesheet" th:href="@{/styles/cssandjs/nicepage.css}" media="screen">
+    <title>Gracz</title>
     <link rel="stylesheet" th:href="@{/styles/cssandjs/champion.css}" media="screen">
-    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/jquery.js}" defer=""></script>
-    <script class="u-script" type="text/javascript" th:src="@{/js/cssandjs/nicepage.js}" defer=""></script>
-    <meta name="generator" content="Nicepage 3.10.2, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-
-
-    <script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "",
-        "url": "home.html",
-        "logo": "images/default-logo.png"
-    }</script>
-    <meta property="og:title" content="Szukaj">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="">
 </head>
-<body class="u-body">
-<header class="u-clearfix u-header u-header" id="sec-d054">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="/" class="u-image u-logo u-image-1">
-            <img th:src="@{/logo/img.png}"/>
+<div class="site" xmlns:th="http://www.w3.org/1999/xhtml">
+    <header class="site-header">
+        <a href="/" style="text-decoration: none">
+            <h1 class="site-title">lolknow</h1>
         </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                   href="#">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-                    </svg>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
-                                <rect y="1" width="16" height="2"></rect>
-                                <rect y="7" width="16" height="2"></rect>
-                                <rect y="13" width="16" height="2"></rect>
-                            </symbol>
-                        </defs>
-                    </svg>
-                </a>
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="/">Szukaj</a></li>
+                <li><a href="/v1/ranking/all">Ranking</a></li>
+                <li><a href="/v1/champions/all">Bohaterowie</a></li>
+                <li><a href="/v1/about/">O aplikacji</a></li>
+            </ul>
+        </nav><!-- .site-navigation -->
+    </header><!-- .site-header -->
+    <main class="content">
+        <h4 class="champion-name" th:text="${champion.name}"></h4>
+        <p class="champion-title" th:text="${champion.title}"></p>
+        <div class="content-champion">
+            <div class="content-image">
+            <img class="image-champion" th:src="@{/img/loading/{image}(image=${champion.image.full})}" alt="" src="">
             </div>
-            <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-unstyled u-nav-1">
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/ranking/all"
-                            style="padding: 10px 20px;">Ranking</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            style="padding: 10px 20px;"
-                            href="/v1/champions/all">Bohaterowie</a>
-
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/contact/">Kontakt</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="/v1/about/" style="padding: 10px 20px;">O aplikacji</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="u-custom-menu u-nav-container-collapse">
-                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                    <div class="u-sidenav-overflow">
-                        <div class="u-menu-close"></div>
-                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="home.html"
-                                                      style="padding: 10px 20px;">Szukaj</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">Ranking</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">Bohaterowie</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Kontakt.html"
-                                                      style="padding: 10px 20px;">Kontakt</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="O-aplikacji.html"
-                                                      style="padding: 10px 20px;">O aplikacji</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-            </div>
-        </nav>
-    </div>
-</header>
-</body>
-<section class="u-align-center u-clearfix u-section-1" id="carousel_ae03">
-    <div class="u-clearfix u-sheet">
-        <div>
-            <div class="u-tab-content">
-                <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5"
-                     role="tabpanel" aria-labelledby="link-tab-0da5">
-                    <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
-                        <img class="u-image u-image-1" th:src="@{/img/loading/{image}(image=${champion.image.full})}"
-                             data-image-width="308" data-image-height="560">
-                        <h4 class="u-text u-text-1" th:text="${champion.name}"></h4>
-                        <p class="u-text u-text-grey-40 u-text-2" th:text="${champion.title}"></p>
-                        <!--                        <ul class="u-custom-list u-text u-text-3">-->
-                        <table style="width:50%; margin-left:330px; margin-top:40px">
-                            <tr>
-                                <td>Punkty życia</td>
-                                <td><strong><span th:text="${champion.stats.hp}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Punkty many</td>
-                                <td><strong><span th:text="${champion.stats.mp}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Pancerz</td>
-                                <td><strong><span th:text="${champion.stats.armor}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Prędkość ruchu</td>
-                                <td><strong><span th:text="${champion.stats.movespeed}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Zasięg uderzenia</td>
-                                <td><strong><span th:text="${champion.stats.attackrange}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Regeneracja punktów życia</td>
-                                <td><strong><span th:text="${champion.stats.hpregen}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Szansa na obrażenia krytyczne</td>
-                                <td><strong><span th:text="${champion.stats.crit}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Siła ataku</td>
-                                <td><strong><span th:text="${champion.stats.attackdamage}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Prędkość ataku</td>
-                                <td><strong><span th:text="${champion.stats.attackspeed}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Pancerz/poziom</td>
-                                <td><strong><span th:text="${champion.stats.armorperlevel}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Punkty życia/poziom</td>
-                                <td><strong><span th:text="${champion.stats.hpperlevel}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Mana/poziom</td>
-                                <td><strong><span th:text="${champion.stats.mpperlevel}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Szansa na obrażenia krytyczne/poziom</td>
-                                <td><strong><span th:text="${champion.stats.critperlevel}"></span></strong></td>
-                            </tr>
-                            <tr>
-                                <td>Siła ataku/poziom</td>
-                                <td><strong><span th:text="${champion.stats.attackdamageperlevel}"></span></strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Prędkość ataku/poziom</td>
-                                <td><strong><span th:text="${champion.stats.attackspeedperlevel}"></span></strong>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+            <div class="content-table">
+            <table class = "table-stats">
+                <tr>
+                    <td>Punkty życia</td>
+                    <td><strong><span th:text="${champion.stats.hp}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Punkty many</td>
+                    <td><strong><span th:text="${champion.stats.mp}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Pancerz</td>
+                    <td><strong><span th:text="${champion.stats.armor}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Prędkość ruchu</td>
+                    <td><strong><span th:text="${champion.stats.movespeed}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Zasięg uderzenia</td>
+                    <td><strong><span th:text="${champion.stats.attackrange}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Regeneracja punktów życia</td>
+                    <td><strong><span th:text="${champion.stats.hpregen}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Szansa na obrażenia krytyczne</td>
+                    <td><strong><span th:text="${champion.stats.crit}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Siła ataku</td>
+                    <td><strong><span th:text="${champion.stats.attackdamage}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Prędkość ataku</td>
+                    <td><strong><span th:text="${champion.stats.attackspeed}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Pancerz/poziom</td>
+                    <td><strong><span th:text="${champion.stats.armorperlevel}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Punkty życia/poziom</td>
+                    <td><strong><span th:text="${champion.stats.hpperlevel}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Mana/poziom</td>
+                    <td><strong><span th:text="${champion.stats.mpperlevel}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Szansa na obrażenia krytyczne/poziom</td>
+                    <td><strong><span th:text="${champion.stats.critperlevel}"></span></strong></td>
+                </tr>
+                <tr>
+                    <td>Siła ataku/poziom</td>
+                    <td><strong><span th:text="${champion.stats.attackdamageperlevel}"></span></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Prędkość ataku/poziom</td>
+                    <td><strong><span th:text="${champion.stats.attackspeedperlevel}"></span></strong>
+                    </td>
+                </tr>
+            </table>
             </div>
         </div>
-    </div>
-</section>
-<section class="u-align-center u-clearfix u-section-1">
-    <div class="u-clearfix u-sheet">
-        <div class="u-tab-content">
-            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id=""
-                 role="tabpanel" aria-labelledby="link-tab-0da5">
-                <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
-
-                    <div>
-                        <img th:src="@{/img/passive/{image}(image=${champion.passive.image.full})}"
-                             data-image-width="64" data-image-height="64" alt=""
-                             class="u-image u-image-default u-image-3">
-                        <div class="skill-opis">
-                            <p>
-                                <span style="font-weight: 700;" th:text="${champion.passive.name}"></span>
-                                <br>
-                                <span th:text="${champion.passive.description}"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill" th:each="spell : ${champion.spells}">
-                        <!--                           <img th:src="@{/img/spell/{image}(image=${spell.image.full})}" data-image-width="64" data-image-height="64">-->
-                        <p>
-                            <span style="font-weight: 700;" th:text="${spell.name}"></span>
-                            <br>
-                            <span th:text="${spell.description}"></span>
-                        </p>
-                    </div>
-                    <hr>
-                    <div class="lore">
-                        <!--                        <div class="skill-img">-->
-                        <!--                            <img th:src="@{/img/spell/{image}(image=${spell.image.full})}" data-image-width="138" data-image-height="138">-->
-                        <!--                        </div>-->
-                        <div class="">
-                            <p>
-                                <span style="font-weight: 700;">Historia postaci</span>
-                                <br>
-                                <span th:text="${champion.lore}"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <span style="font-weight: 700;">Wskazówki dla sojuszników:</span>
-                        <p>
-                            <span th:text="${champion.allytips}"></span>
-                        </p>
-                    </div>
-                    <hr>
-                    <div>
-                        <span style="font-weight: 700;">Wskazówki dla przeciwników:</span>
-                        <p>
-                            <span th:text="${champion.enemytips}"></span>
-                        </p>
-                    </div>
-                </div>
+        <div class="container-champion">
+            <div class="container-image">
+            <img class="image-skills" th:src="@{/img/passive/{image}(image=${champion.passive.image.full})}" alt="" src="">
+            </div>
+            <div class="container-text">
+                    <span class="skill-title" th:text="${champion.passive.name}"></span>
+                    <br>
+                    <span class="skill-description" th:text="${champion.passive.description}"></span>
             </div>
         </div>
-    </div>
-    </div>
-</section>
-<section class="u-align-center u-clearfix u-section-2" id="sec-0973">
-    <div class="u-clearfix u-sheet u-sheet-1"></div>
-</section>
-<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-eaff">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">LOLKNOW isn't endorsed by Riot Games and doesn't reflect
-            the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games
-            properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games,
-            Inc.</p>
-    </div>
-</footer>
+        <div class="container-champion" th:each="spell : ${champion.spells}">
+            <div class="container-image">
+                <img class="image-skills" th:src="@{/img/spell/{image}(image=${spell.image.full})}" alt="" src="">
+            </div>
+            <div class="container-text">
+                <span class="skill-title" th:text="${spell.name}"></span>
+                <br>
+                <span class="skill-description" th:text="${spell.description}"></span>
+            </div>
+        </div>
+        <hr>
+        <div class="lore">
+            <div class="">
+                <p>
+                    <span style="font-weight: 700; margin-top: 10px;display: block;">Historia postaci</span>
+                    <br>
+                    <span th:text="${champion.lore}"></span>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="lore">
+            <span style="font-weight: 700;">Wskazówki dla sojuszników:</span>
+            <p>
+                <span th:text="${champion.allytips}"></span>
+            </p>
+        </div>
+        <hr>
+        <div class="lore">
+            <span style="font-weight: 700;">Wskazówki dla przeciwników:</span>
+            <p>
+                <span th:text="${champion.enemytips}"></span>
+            </p>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>LOLKNOW isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone
+            officially involved in producing or managing Riot Games properties. Riot Games, and all associated
+            properties are trademarks or registered trademarks of Riot Games, Inc.
+        </p>
+    </footer><!-- .site-footer -->
+</div><!-- .site -->
+
 </html>

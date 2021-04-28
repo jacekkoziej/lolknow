@@ -10,19 +10,20 @@ public class RankingInfo {
     private String summonerId;
     private String summonerName;
     private String leaguePoints;
-    private String wins;
-    private String losses;
+    private int wins;
+    private int losses;
     private String veteran;
     private String inactive;
     private String freshBlood;
     private String hotStreak;
     private String wlratio;
 
-    public String calculateWlratio(String wins, String losses){
-        float w = Float.parseFloat(getWins());
-        float l = Float.parseFloat(getLosses());
-        float wlratio = w/l;
-        return Float.toString(wlratio);
+    public String calculateWlratio(int wins, int losses){
+        double w = Double.parseDouble(String.valueOf(getWins()));
+        double l = Double.parseDouble(String.valueOf(getLosses()));
+        double wlratio = w/l;
+        double roundOff = Math.round(wlratio * 100.0) / 100.0;
+        return Double.toString(roundOff);
     }
     public String getWlratio() {
         wlratio = calculateWlratio(getWins(),getLosses());
@@ -95,19 +96,19 @@ public class RankingInfo {
         this.leaguePoints = leaguePoints;
     }
 
-    public String getWins() {
+    public int getWins() {
         return wins;
     }
 
-    public void setWins(String wins) {
+    public void setWins(int wins) {
         this.wins = wins;
     }
 
-    public String getLosses() {
+    public int getLosses() {
         return losses;
     }
 
-    public void setLosses(String losses) {
+    public void setLosses(int losses) {
         this.losses = losses;
     }
 

@@ -1,148 +1,168 @@
-.u-section-1 .u-sheet-1 {
-  min-height: 709px;
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('static/font/dosis.woff2') format('woff2'),
+  url('static/font/dosis.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.u-section-1 .u-list-1 {
-  min-height: 352px;
-  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+/*
+Website Name: One Column Layout
+Description: A one column layout for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Dosis, sans-serif;
+  background-color: #FCF7FF;
+  font-size: 16px;
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.site {
+  background-color: #FCF7FF;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.champions-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+.champions{
+  display: inline-block;
+  border-spacing: 0.2rem;
+}
+.title-help{
+  text-align:center;
+  font-family: Dosis, sans-serif;;
+}
+/* =Elements
+---------------------------*/
+img {
+  max-width: 100%;
   height: auto;
-  grid-gap: 0px 0px;
-  margin-bottom: 60px;
-  margin-top: 157px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 26px;
+}
+p {
+  margin-bottom: 26px;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
-.u-section-1 .u-list-item-1 {
-  background-image: none;
+/* =Header
+---------------------------*/
+.site-header {
+  padding: 40px;
+  text-align: center;
+  background-color: #FCF7FF;
+  color: #655560;
 }
-
-.u-section-1 .u-container-layout-1 {
-  padding: 30px;
+.site-title {
+  margin: 0;
 }
-
-.u-section-1 .u-icon-1 {
-  height: 48px;
-  width: 48px;
-  margin: 59px auto 0 1px;
-}
-
-.u-section-1 .u-text-1 {
-  margin: 20px 94px 0 1px;
-}
-
-.u-section-1 .u-text-2 {
-  font-style: italic;
-  margin: 20px 1px 0;
-}
-
-.u-section-1 .u-list-item-2 {
-  background-image: none;
-}
-
-.u-section-1 .u-container-layout-2 {
-  padding: 30px;
-}
-
-.u-section-1 .u-icon-2 {
-  height: 48px;
-  width: 48px;
-  margin: 59px auto 0 1px;
-}
-
-.u-section-1 .u-text-3 {
-  margin: 20px 94px 0 1px;
-}
-
-.u-section-1 .u-text-4 {
-  font-style: italic;
-  margin: 20px 1px 0;
-}
-
-.u-section-1 .u-list-item-3 {
-  background-image: none;
-}
-
-.u-section-1 .u-container-layout-3 {
-  padding: 30px;
-}
-
-.u-section-1 .u-icon-3 {
-  height: 48px;
-  width: 48px;
-  margin: 59px auto 0 1px;
-}
-
-.u-section-1 .u-text-5 {
-  margin: 20px 94px 0 1px;
-}
-
-.u-section-1 .u-text-6 {
-  font-style: italic;
-  margin: 20px 1px 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 647px;
-  }
-
-  .u-section-1 .u-list-1 {
-    min-height: 290px;
-    grid-template-columns: repeat(3, 33.333333333333336%);
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-3 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-4 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-5 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-6 {
-    margin-right: 0;
+@media (min-width: 800px) {
+  .site-title {
+    float: left;
   }
 }
 
-@media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 1023px;
-  }
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+}
+.site-navigation a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #655560;
+  padding: 0 20px;
+}
+.site-navigation a:hover {
+  color: #4cacbe;
+}
 
-  .u-section-1 .u-list-1 {
-    min-height: 666px;
-    grid-template-columns: repeat(2, 50%);
+@media (min-width: 800px) {
+  .site-navigation {
+    float: right;
+  }
+  .site-navigation a {
+    padding: 0 0 0 20px;
+  }
+}
+.text{
+  width:70%;
+  text-align:center;
+  margin: 150px auto;
+}
+/* =Content
+---------------------------*/
+.content-wrapper {
+  padding: 40px;
+  min-height: 100%;
+  margin-bottom: -100px;
+  flex: 1 0 auto;
+}
+main{
+  background: white;
+  color: white;
+  margin: 5px auto;
+}
+
+.content{
+  min-height: calc(100vh - 180px);
+  color:black;
+  background-color: #deecfb;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* =Footer
+---------------------------*/
+.site-footer {
+  background-color: #FCF7FF;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  color: #655560;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    clear: both;
+    text-align: center;
+  }
+  .site-footer .column {
+    width: 32%;
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 2%;
+  }
+  .site-footer .column.last {
+    padding-right: 0;
   }
 }
 
-@media (max-width: 767px) {
-  .u-section-1 .u-list-1 {
-    grid-template-columns: 100%;
-  }
-
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}

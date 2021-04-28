@@ -11,9 +11,9 @@ public class Player {
     private String rank;
     private String summonerId;
     private String summonerName;
-    private String leaguePoints;
-    private String wins;
-    private String losses;
+    private int leaguePoints;
+    private int wins;
+    private int losses;
     private String veteran;
     private String inactive;
     private String freshBlood;
@@ -76,27 +76,27 @@ public class Player {
         this.summonerName = summonerName;
     }
 
-    public String getLeaguePoints() {
+    public int getLeaguePoints() {
         return leaguePoints;
     }
 
-    public void setLeaguePoints(String leaguePoints) {
+    public void setLeaguePoints(int leaguePoints) {
         this.leaguePoints = leaguePoints;
     }
 
-    public String getWins() {
+    public int getWins() {
         return wins;
     }
 
-    public void setWins(String wins) {
+    public void setWins(int wins) {
         this.wins = wins;
     }
 
-    public String getLosses() {
+    public int getLosses() {
         return losses;
     }
 
-    public void setLosses(String losses) {
+    public void setLosses(int losses) {
         this.losses = losses;
     }
 

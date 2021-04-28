@@ -1,247 +1,250 @@
-.u-section-1 .u-sheet-1 {
-  min-height: 1251px;
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('static/font/dosis.woff2') format('woff2'),
+    url('static/font/dosis.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.u-section-1 .u-image-1 {
-  width: 308px;
-  height: 560px;
-  margin: 138px auto 0 100px;
+/*
+Website Name: One Column Layout
+Description: A one column layout for a website.
+Author(s): Your Name(s)...
+
+This site is for educational purposes in connection with the Girl Scouts of Western Ohio. All image rights are retained solely by the original sources.
+*/
+
+/* =Structure
+---------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.u-section-1 .u-list-1 {
-  width: 622px;
-  min-height: 710px;
-  grid-template-columns: 100%;
-  grid-gap: 0px 0px;
-  height: auto;
-  margin: -635px 31px 0 auto;
+body {
+    font-family: Dosis, sans-serif;
+    background-color: #FCF7FF;
+    font-size: 16px;
+    min-height: 100%;
+    margin-bottom: -100px;
 }
 
-.u-section-1 .u-container-layout-1 {
-  padding: 30px;
+.site {
+    background-color: #FCF7FF;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.u-section-1 .u-icon-1 {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto 0 0;
+/* =Elements
+---------------------------*/
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.u-section-1 .u-text-1 {
-  margin: -82px 36px 0 79px;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 26px;
 }
 
-.u-section-1 .u-container-layout-2 {
-  padding: 30px;
+p {
+    margin-bottom: 26px;
 }
 
-.u-section-1 .u-icon-2 {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto 0 0;
+p:last-child {
+    margin-bottom: 0;
 }
 
-.u-section-1 .u-text-2 {
-  margin: -82px 36px 0 79px;
+/* =Header
+---------------------------*/
+.site-header {
+    padding: 40px;
+    text-align: center;
+    background-color: #FCF7FF;
+    color: #655560;
 }
 
-.u-section-1 .u-container-layout-3 {
-  padding: 30px;
+.site-title {
+    margin: 0;
 }
 
-.u-section-1 .u-icon-3 {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto 0 0;
+@media (min-width: 800px) {
+    .site-title {
+        float: left;
+    }
 }
 
-.u-section-1 .u-text-3 {
-  margin: -82px 36px 0 79px;
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.u-section-1 .u-container-layout-4 {
-  padding: 30px;
+.site-navigation li {
+    display: inline-block;
 }
 
-.u-section-1 .u-icon-4 {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto 0 0;
+.site-navigation a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #655560;
+    padding: 0 20px;
 }
 
-.u-section-1 .u-text-4 {
-  margin: -82px 36px 0 79px;
+.site-navigation a:hover {
+    color: #4cacbe;
 }
 
-.u-section-1 .u-container-layout-5 {
-  padding: 30px;
+@media (min-width: 800px) {
+    .site-navigation {
+        float: right;
+    }
+
+    .site-navigation a {
+        padding: 0 0 0 20px;
+    }
 }
 
-.u-section-1 .u-icon-5 {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto 0 0;
+/* =Content
+---------------------------*/
+.content-wrapper {
+    padding: 40px;
+    min-height: 100%;
+    margin-bottom: -100px;
+    flex: 1 0 auto;
 }
 
-.u-section-1 .u-text-5 {
-  margin: -82px 36px 0 79px;
+main {
+    background: white;
+    color: white;
+    margin: 5px auto;
 }
 
-.u-section-1 .u-text-6 {
-  font-size: 1.125rem;
-  margin: 48px 100px 0;
+.content {
+    min-height: calc(100vh - 180px);
+    color: black;
+    background-color: #deecfb;
+    border-radius: 10px;
 }
 
-.u-section-1 .u-text-7 {
-  margin: 11px 77px 0 123px;
+.table-stats {
+    width: 50%;
+    margin-left: 330px;
+    margin-top: 40px;
 }
 
-.u-section-1 .u-text-8 {
-  font-size: 1.125rem;
-  margin: 19px 100px 0;
+.container {
 }
 
-.u-section-1 .u-text-9 {
-  margin: 10px 100px 0;
+.container-champion {
+    max-width: 800px;
+    max-height: 200px;
+    display: flex;
+    margin: auto;
 }
 
-.u-section-1 .u-text-10 {
-  font-size: 1.125rem;
-  margin: 34px 100px 0;
+.container-image {
+    margin: 10px;
+    float: left;
+    width: 80px;
+    height: 80px;
 }
 
-.u-section-1 .u-text-11 {
-  margin: 10px 100px 60px;
+.container-text {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 90%;
+    height: 110px;
 }
 
-@media (max-width: 1199px) {
-  .u-section-1 .u-list-1 {
-    grid-template-rows: auto auto auto;
-  }
-
-  .u-section-1 .u-text-6 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-7 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-8 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-9 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-10 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-text-11 {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.skill-title {
+    font-weight: 700;
 }
 
-@media (max-width: 767px) {
-  .u-section-1 .u-list-1 {
-    width: 540px;
-    margin-right: 0;
-  }
+.skill-description {
 
-  .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-right: 15px;
-    margin-left: 58px;
-  }
-
-  .u-section-1 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-right: 15px;
-    margin-left: 58px;
-  }
-
-  .u-section-1 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-3 {
-    margin-right: 15px;
-    margin-left: 58px;
-  }
-
-  .u-section-1 .u-container-layout-4 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-4 {
-    margin-right: 15px;
-    margin-left: 58px;
-  }
-
-  .u-section-1 .u-container-layout-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-5 {
-    margin-right: 15px;
-    margin-left: 58px;
-  }
 }
 
-@media (max-width: 575px) {
-  .u-section-1 .u-image-1 {
-    margin-left: 32px;
-  }
-
-  .u-section-1 .u-list-1 {
-    width: 340px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .u-section-1 .u-text-3 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .u-section-1 .u-text-4 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .u-section-1 .u-text-5 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}.u-section-2 .u-sheet-1 {
-  min-height: 600px;
-}.u-section-3 .u-sheet-1 {
-  min-height: 13px;
+.image-skills {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
 }
+
+.content-champion {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+}
+
+.content-image {
+    margin: 10px;
+    float: left;
+
+}
+
+.content-table {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.champion-name{
+    font-weight: 600;
+    font-size: larger;
+    text-align:center;
+    padding: 10px;
+}
+.champion-title{
+    font-style: italic;
+    text-align:center;
+}
+
+.image-champion{
+    height: 400px;
+    padding: 20px;
+
+}
+.lore{
+    width: 78%;
+    margin: auto;
+}
+/* =Footer
+---------------------------*/
+.site-footer {
+    background-color: #FCF7FF;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    color: #655560;
+}
+
+@media (min-width: 800px) {
+    .site-footer {
+        clear: both;
+        text-align: center;
+    }
+
+    .site-footer .column {
+        width: 32%;
+        float: left;
+        padding-right: 2%;
+        margin-bottom: 2%;
+    }
+
+    .site-footer .column.last {
+        padding-right: 0;
+    }
+}
+
